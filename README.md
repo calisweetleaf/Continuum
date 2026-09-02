@@ -1,30 +1,9 @@
-<div align="center">
-
-<svg width="480" height="200" viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Continuum banner">
-  <defs>
-    <linearGradient id="ctmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#c9a0dc;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#8ec5fc;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#c9a0dc;stop-opacity:1" />
-    </linearGradient>
-    <filter id="ctmGlow">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-  <rect width="480" height="200" fill="#0d1117" rx="14"/>
-  <rect x="1" y="1" width="478" height="198" fill="none" stroke="#1e2430" stroke-width="1" rx="14"/>
-  <text x="240" y="94" font-family="'Courier New', monospace" font-size="46" fill="url(#ctmGrad)" text-anchor="middle" filter="url(#ctmGlow)" font-weight="bold" letter-spacing="4">CONTINUUM</text>
-  <text x="240" y="122" font-family="'Courier New', monospace" font-size="12" fill="#8b949e" text-anchor="middle" letter-spacing="2">TEST-TIME TOOLING</text>
-  <text x="240" y="146" font-family="'Courier New', monospace" font-size="10.5" fill="#484f58" text-anchor="middle">MCTS &#183; A* &#183; BoN  |  Speculative Execution  |  Typed Contract Surface</text>
-  <line x1="150" y1="160" x2="330" y2="160" stroke="#21262d" stroke-width="1"/>
-  <text x="240" y="178" font-family="'Courier New', monospace" font-size="9" fill="#2d333b" text-anchor="middle" letter-spacing="5">CHERRY_TTT &#183; PROJECT-A119</text>
-</svg>
-
-</div>
+<p align="center">
+  <img src="assets/continuum-banner.svg" alt="Continuum — Test-Time Tooling" width="480">
+</p>
 
 <div align="center">
-  <img src="assets/cherry.png" alt="Continuum project mark, a stylized cherry" width="96" height="96" style="border-radius:50%;object-fit:cover;">
+  <img src="assets/cherry.png" alt="Continuum project mark, a stylized cherry" width="96" height="96">
 </div>
 
 <p align="center">
@@ -36,32 +15,8 @@
 
 ---
 
-<style>
-.t{background:#141414;border-radius:10px;box-shadow:0 12px 40px rgba(0,0,0,.55),0 0 0 1px #2a2a2a;margin:22px 0;font-family:'Menlo','Monaco','Cascadia Code','Courier New',monospace;overflow:hidden}
-.t-hdr{background:#252525;padding:11px 16px;display:flex;align-items:center;border-bottom:1px solid #1e1e1e;user-select:none}
-.t-btn{width:13px;height:13px;border-radius:50%;margin-right:8px;flex-shrink:0}
-.t-btn.r{background:#ff5f57;box-shadow:0 0 4px #ff5f5780}.t-btn.y{background:#febc2e;box-shadow:0 0 4px #febc2e80}.t-btn.g{background:#28c840;box-shadow:0 0 4px #28c84080}
-.t-title{color:#888;font-size:12.5px;margin-left:10px;letter-spacing:.4px}
-.t-tag{margin-left:auto;background:#1e1e1e;border:1px solid #333;color:#555;font-size:10px;padding:2px 8px;border-radius:3px;letter-spacing:1px;text-transform:uppercase}
-.t-body{padding:18px 20px;font-size:13px;line-height:1.65;color:#d4d4d4;overflow-x:auto}
-.t-diag{white-space:pre;font-size:12.5px;line-height:1.35;color:#c9d1d9;overflow-x:auto;padding:18px 20px;margin:0;font-family:'Menlo','Monaco','Cascadia Code','Courier New',monospace}
-.t-code{white-space:pre;font-size:12.5px;line-height:1.6;overflow-x:auto;padding:18px 20px;margin:0;color:#d4d4d4;font-family:'Menlo','Monaco','Cascadia Code','Courier New',monospace}
-.prompt{color:#28c840}.dim{color:#777}.info{color:#8ec5fc}.ok{color:#28c840}.warn{color:#febc2e}.err{color:#ff5f57}.accent{color:#c9a0dc}
-.out{margin-bottom:3px}.cmd{margin-bottom:2px}
-.t-sep{height:1px;background:#1e1e1e;margin:8px 0}
-.mon-row{display:grid;grid-template-columns:190px 1fr 84px;align-items:center;margin-bottom:6px;font-size:12.5px}
-.mon-label{color:#888}.mon-bar{background:#1e1e1e;height:9px;border-radius:2px;overflow:hidden;position:relative}
-.mon-fill{height:100%;border-radius:2px}.mon-val{color:#c9d1d9;text-align:right;font-size:11px}
-.intel{background:#0d1117;border:1px solid #21262d;border-radius:8px;margin:20px 0;font-family:'Menlo','Monaco','Courier New',monospace;overflow:hidden}
-.intel-hdr{background:#161b22;padding:10px 18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #21262d}
-.intel-cls{color:#8ec5fc;font-size:10px;font-weight:bold;letter-spacing:4px}.intel-id{color:#484f58;font-size:11px}
-.intel-body{padding:12px 18px}
-.intel-row{display:flex;padding:7px 0;border-bottom:1px solid #0d1117;font-size:13px;line-height:1.5}
-.intel-row:last-child{border-bottom:none}
-.intel-lbl{color:#8b949e;min-width:150px;flex-shrink:0}.intel-val{color:#c9d1d9}
-</style>
 
-Continuum (package name `cherry_ttt`) extends reasoning at inference time by searching, sampling, and speculatively committing actions against a real, typed contract surface, not a language model's own token stream. Every search in this repository runs with no trained value model in the loop: reward comes from a verifier reading real substrate state through a read-only view. A model can sit behind this later; nothing here requires one to exist first.
+Cherry Continuum is introduced here as the test-time member of the Cherry method family: a model-agnostic search and control regime in which cognition, typed environment action, raw observation, verification, reversible state transition, and later training evidence remain attached to one governed branch graph. The method was previously carried under the working label **Cherry Test-Time Tooling**. That name accurately described the initial engineering move—lifting Cherry's inference operators from token sequences into tool and environment trajectories—but it no longer names the property that makes the resulting system distinct. The load-bearing property is continuity. Search does not terminate when a model emits a tool call, restart when a shell returns output, or flatten a branch into an assistant-authored transcript before reasoning resumes. One branch remains one branch as the type of transition changes.
 
 ---
 
@@ -96,13 +51,14 @@ The repository is therefore testing a narrower and more falsifiable question tha
 
 ## Architecture
 
-<div class="t">
-  <div class="t-hdr">
-    <div class="t-btn r"></div><div class="t-btn y"></div><div class="t-btn g"></div>
-    <span class="t-title">cherry_ttt &#183; contract surface</span>
-    <span class="t-tag">DIAGRAM</span>
-  </div>
-<pre class="t-diag">
+<p align="center">
+  <img src="assets/architecture.svg" alt="Cherry TTT contract surface architecture: GoalSpec through ContractMDP into substrate, search, speculation, and PredicateRegistry" width="1000">
+</p>
+
+<details>
+<summary><strong>Contract surface · text view</strong></summary>
+
+```text
               ┌───────────────────────────────────────┐
               │              GoalSpec                  │
               │   predicates over real substrate state │
@@ -128,11 +84,12 @@ The repository is therefore testing a narrower and more falsifiable question tha
                                    │ execute → snapshot → digest
               ┌────────────────────▼────────────────────┐
               │             PredicateRegistry             │
-              │   reads through ReadOnlyView only —       │
+              │   reads through ReadOnlyView only         │
               │   cannot write world state, even by bug   │
               └────────────────────────────────────────┘
-</pre>
-</div>
+```
+
+</details>
 
 Every candidate action is schema-conformed and effect-gated before search ever sees it. Every transition executes, then snapshots, then digests. Every reward is a verifier reading a `ReadOnlyView`, never the substrate directly. Search strategies and the speculative execution stack operate against that one contract, so swapping strategy never changes what "correct" means.
 
@@ -140,27 +97,29 @@ Every candidate action is schema-conformed and effect-gated before search ever s
 
 ## Quick start
 
-<div class="t">
-  <div class="t-hdr">
-    <div class="t-btn r"></div><div class="t-btn y"></div><div class="t-btn g"></div>
-    <span class="t-title">cherry_ttt &#183; install and smoke</span>
-    <span class="t-tag">VERIFIED</span>
-  </div>
-  <div class="t-body">
-    <div class="cmd"><span class="prompt">~/continuum$</span> python3 -m venv .venv && source .venv/bin/activate</div>
-    <div class="cmd"><span class="prompt">~/continuum$</span> pip install -e .</div>
-    <div class="cmd"><span class="prompt">~/continuum$</span> cherry-ttt smoke</div>
-    <div class="t-sep"></div>
-    <div class="out dim">{</div>
-    <div class="out dim">&nbsp;&nbsp;"core": { "jcs_deterministic": true, ... },</div>
-    <div class="out dim">&nbsp;&nbsp;"substrates": { "memory_kv": "...", "sqlite": "...", "filesystem": "..." },</div>
-    <div class="out dim">&nbsp;&nbsp;"search": { "algorithms": ["EnvMCTS", "EnvAStar", "BestOfNActionSampler"], ... },</div>
-    <div class="out dim">&nbsp;&nbsp;"speculate": { "gamma_initial": 5, "drafter_protocol": true },</div>
-    <div class="out dim">&nbsp;&nbsp;...</div>
-    <div class="out dim">}</div>
-    <div class="out ok" style="margin-top:8px;">exit 0 &#183; every subsystem instantiated, no exception</div>
-  </div>
-</div>
+<p align="center">
+  <img src="assets/quick-start.svg" alt="Cherry TTT install and smoke terminal" width="1000">
+</p>
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -e .
+cherry-ttt smoke
+```
+
+Expected smoke surface:
+
+```json
+{
+  "core": { "jcs_deterministic": true, "...": "..." },
+  "substrates": { "memory_kv": "...", "sqlite": "...", "filesystem": "..." },
+  "search": { "algorithms": ["EnvMCTS", "EnvAStar", "BestOfNActionSampler"], "...": "..." },
+  "speculate": { "gamma_initial": 5, "drafter_protocol": true },
+  "...": "..."
+}
+```
+
+`exit 0` · every subsystem instantiated, no exception
 
 `cherry-ttt smoke` is an integration smoke check: every subsystem runs through its real code path once. It is not proof that search behaves well on your task. See [Evidence](#evidence) for what has actually been measured.
 
@@ -209,82 +168,34 @@ Those two results define the practical research pressure on Continuum: search qu
 
 ## Fabric (Project-A119)
 
-<div class="intel">
-  <div class="intel-hdr">
-    <span class="intel-cls">SUBSYSTEM STATUS</span>
-    <span class="intel-id">fabric/ &#183; 2026-09-02</span>
-  </div>
-  <div class="intel-body">
-    <div class="intel-row">
-      <span class="intel-lbl">Model</span>
-      <span class="intel-val">Equalizer gates everything (dyson sphere). Attention fabric is what it gates (the sun). Continuum rides on top, not yet wired.</span>
-    </div>
-    <div class="intel-row">
-      <span class="intel-lbl">fabric/equalizer</span>
-      <span class="intel-val">Symbolic fault gate. Single choke point: <code>Equalizer.execute()</code>. Normalize &#8594; Capability &#8594; fault-check &#8594; witness &#8594; commit.</span>
-    </div>
-    <div class="intel-row">
-      <span class="intel-lbl">fabric/attention</span>
-      <span class="intel-val">Resident reactive attention over typed streams. 8 kernels, each honestly labeled by real complexity class. Not a stateless scorer.</span>
-    </div>
-    <div class="intel-row">
-      <span class="intel-lbl">fabric/bridge.py</span>
-      <span class="intel-val">The one wire built so far: <code>FabricCommitSink</code> feeds every equalized transition into the resident fabric. Verified end to end on real file writes and reads.</span>
-    </div>
-    <div class="intel-row">
-      <span class="intel-lbl">Continuum wire-in</span>
-      <span class="intel-val">Not started. See <code>SESSION_NOTES.md</code> and <code>HANDOFF.md</code> for the full gap list.</span>
-    </div>
-  </div>
-</div>
+<p align="center">
+  <img src="assets/subsystem-status.svg" alt="Project A119 subsystem status for Equalizer, resident attention fabric, bridge, and Continuum wire-in" width="1120">
+</p>
 
-<div class="t">
-  <div class="t-hdr">
-    <div class="t-btn r"></div><div class="t-btn y"></div><div class="t-btn g"></div>
-    <span class="t-title">project-a119 &#183; verification coverage</span>
-    <span class="t-tag">HONEST</span>
-  </div>
-  <div class="t-body">
-    <div class="mon-row">
-      <span class="mon-label">Substrates (mem/sql/fs)</span>
-      <span class="mon-bar"><span class="mon-fill" style="width:100%;background:linear-gradient(90deg,#28c840,#8ec5fc)"></span></span>
-      <span class="mon-val ok">3 / 3</span>
-    </div>
-    <div class="mon-row">
-      <span class="mon-label">Search arms exercised</span>
-      <span class="mon-bar"><span class="mon-fill" style="width:100%;background:linear-gradient(90deg,#28c840,#8ec5fc)"></span></span>
-      <span class="mon-val ok">4 / 4</span>
-    </div>
-    <div class="mon-row">
-      <span class="mon-label">Equalizer sync path</span>
-      <span class="mon-bar"><span class="mon-fill" style="width:100%;background:linear-gradient(90deg,#28c840,#8ec5fc)"></span></span>
-      <span class="mon-val ok">verified</span>
-    </div>
-    <div class="mon-row">
-      <span class="mon-label">Equalizer async/reactive path</span>
-      <span class="mon-bar"><span class="mon-fill" style="width:3%;background:linear-gradient(90deg,#ff5f57,#febc2e)"></span></span>
-      <span class="mon-val err">untested</span>
-    </div>
-    <div class="mon-row">
-      <span class="mon-label">Attention kernels exercised</span>
-      <span class="mon-bar"><span class="mon-fill" style="width:12.5%;background:linear-gradient(90deg,#ff5f57,#febc2e)"></span></span>
-      <span class="mon-val warn">1 / 8</span>
-    </div>
-    <div class="mon-row">
-      <span class="mon-label">RepairKernel fired</span>
-      <span class="mon-bar"><span class="mon-fill" style="width:3%;background:linear-gradient(90deg,#ff5f57,#febc2e)"></span></span>
-      <span class="mon-val err">never</span>
-    </div>
-    <div class="mon-row">
-      <span class="mon-label">Continuum &#8594; Fabric wire</span>
-      <span class="mon-bar"><span class="mon-fill" style="width:3%;background:linear-gradient(90deg,#ff5f57,#febc2e)"></span></span>
-      <span class="mon-val err">not started</span>
-    </div>
-    <div class="t-sep"></div>
-    <div class="out dim">Native doctor scan (somnus-debug doctor): 94 serious findings, 9 genuinely open after triage.</div>
-    <div class="out dim">Full list: SESSION_NOTES.md &#183; SCOPE.md &#183; HANDOFF.md</div>
-  </div>
-</div>
+| Surface | State |
+|---|---|
+| **Model** | Equalizer gates everything (dyson sphere). Attention fabric is what it gates (the sun). Continuum rides on top, not yet wired. |
+| `fabric/equalizer` | Symbolic fault gate. Single choke point: `Equalizer.execute()`. Normalize → Capability → fault-check → witness → commit. |
+| `fabric/attention` | Resident reactive attention over typed streams. 8 kernels, each honestly labeled by real complexity class. Not a stateless scorer. |
+| `fabric/bridge.py` | `FabricCommitSink` feeds every equalized transition into the resident fabric. Verified end to end on real file writes and reads. |
+| **Continuum wire-in** | Not started. See `SESSION_NOTES.md` and `HANDOFF.md` for the full gap list. |
+
+<p align="center">
+  <img src="assets/verification-coverage.svg" alt="Project A119 verification coverage" width="1000">
+</p>
+
+| Verification surface | Current state |
+|---|---:|
+| Substrates (mem/sql/fs) | **3 / 3** |
+| Search arms exercised | **4 / 4** |
+| Equalizer sync path | **verified** |
+| Equalizer async/reactive path | `untested` |
+| Attention kernels exercised | **1 / 8** |
+| RepairKernel fired | `never` |
+| Continuum → Fabric wire | `not started` |
+
+> Native doctor scan (`somnus-debug doctor`): **94 serious findings, 9 genuinely open after triage.**  
+> Full list: `SESSION_NOTES.md` · `SCOPE.md` · `HANDOFF.md`
 
 ---
 
