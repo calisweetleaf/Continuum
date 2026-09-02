@@ -1,0 +1,113 @@
+nl-1-0  oracle=1  n_actions=2  greedy: solved=True plan_len=2
+    sims=   64  solved=True   plan_len= 2  root_children=2  tree_nodes=  19  tree_max_depth= 4  (29.1ms)
+    sims=  256  solved=True   plan_len= 2  root_children=2  tree_nodes=  21  tree_max_depth= 4  (99.7ms)
+    sims= 1024  solved=True   plan_len= 2  root_children=2  tree_nodes=  29  tree_max_depth= 5  (409.5ms)
+    sims= 4096  solved=True   plan_len= 2  root_children=2  tree_nodes=  31  tree_max_depth= 5  (1883.1ms)
+nl-1-1  oracle=4  n_actions=5  greedy: solved=True plan_len=5
+    sims=   64  solved=False  plan_len= 3  root_children=5  tree_nodes=  66  tree_max_depth= 3  (74.8ms)
+    sims=  256  solved=False  plan_len= 4  root_children=5  tree_nodes= 295  tree_max_depth= 4  (350.4ms)
+    sims= 1024  solved=True   plan_len= 5  root_children=5  tree_nodes=1281  tree_max_depth= 5  (1610.0ms)
+    sims= 4096  solved=True   plan_len= 5  root_children=5  tree_nodes=4962  tree_max_depth= 6  (8015.9ms)
+nl-1-2  oracle=4  n_actions=5  greedy: solved=True plan_len=5
+    sims=   64  solved=False  plan_len= 3  root_children=5  tree_nodes=  66  tree_max_depth= 3  (78.1ms)
+    sims=  256  solved=False  plan_len= 4  root_children=5  tree_nodes= 295  tree_max_depth= 4  (358.6ms)
+    sims= 1024  solved=True   plan_len= 5  root_children=5  tree_nodes=1281  tree_max_depth= 5  (1648.3ms)
+    sims= 4096  solved=True   plan_len= 5  root_children=5  tree_nodes=4962  tree_max_depth= 6  (7796.9ms)
+nl-1-3  oracle=4  n_actions=6  greedy: solved=True plan_len=6
+    sims=   64  solved=False  plan_len= 3  root_children=6  tree_nodes=  67  tree_max_depth= 3  (97.2ms)
+    sims=  256  solved=False  plan_len= 4  root_children=6  tree_nodes= 289  tree_max_depth= 4  (438.5ms)
+    sims= 1024  solved=False  plan_len= 5  root_children=6  tree_nodes=1212  tree_max_depth= 5  (2078.4ms)
+    sims= 4096  solved=True   plan_len= 6  root_children=6  tree_nodes=5519  tree_max_depth= 6  (12253.4ms)
+nl-1-4  oracle=1  n_actions=2  greedy: solved=True plan_len=2
+    sims=   64  solved=True   plan_len= 2  root_children=2  tree_nodes=  19  tree_max_depth= 4  (29.2ms)
+    sims=  256  solved=True   plan_len= 2  root_children=2  tree_nodes=  21  tree_max_depth= 4  (99.2ms)
+    sims= 1024  solved=True   plan_len= 2  root_children=2  tree_nodes=  29  tree_max_depth= 5  (404.3ms)
+    sims= 4096  solved=True   plan_len= 2  root_children=2  tree_nodes=  31  tree_max_depth= 5  (1924.3ms)
+nl-1-5  oracle=4  n_actions=5  greedy: solved=True plan_len=5
+    sims=   64  solved=False  plan_len= 3  root_children=5  tree_nodes=  66  tree_max_depth= 3  (76.6ms)
+    sims=  256  solved=False  plan_len= 4  root_children=5  tree_nodes= 295  tree_max_depth= 4  (442.7ms)
+    sims= 1024  solved=True   plan_len= 5  root_children=5  tree_nodes=1281  tree_max_depth= 5  (1583.2ms)
+    sims= 4096  solved=True   plan_len= 5  root_children=5  tree_nodes=4962  tree_max_depth= 6  (7911.4ms)
+nl-2-0  oracle=1  n_actions=2  greedy: solved=True plan_len=2
+    sims=   64  solved=True   plan_len= 2  root_children=2  tree_nodes=  19  tree_max_depth= 4  (28.2ms)
+    sims=  256  solved=True   plan_len= 2  root_children=2  tree_nodes=  21  tree_max_depth= 4  (99.2ms)
+    sims= 1024  solved=True   plan_len= 2  root_children=2  tree_nodes=  29  tree_max_depth= 5  (405.6ms)
+    sims= 4096  solved=True   plan_len= 2  root_children=2  tree_nodes=  31  tree_max_depth= 5  (1887.8ms)
+nl-2-1  oracle=4  n_actions=6  greedy: solved=True plan_len=6
+    sims=   64  solved=False  plan_len= 4  root_children=6  tree_nodes=  75  tree_max_depth= 4  (99.6ms)
+    sims=  256  solved=False  plan_len= 5  root_children=6  tree_nodes= 298  tree_max_depth= 5  (460.7ms)
+    sims= 1024  solved=False  plan_len= 5  root_children=6  tree_nodes=1109  tree_max_depth= 5  (2122.0ms)
+    sims= 4096  solved=True   plan_len= 6  root_children=6  tree_nodes=5307  tree_max_depth= 6  (13725.4ms)
+nl-2-2  oracle=7  n_actions=9  greedy: solved=True plan_len=9
+    sims=   64  solved=False  plan_len= 4  root_children=6  tree_nodes=  75  tree_max_depth= 4  (126.5ms)
+    sims=  256  solved=False  plan_len= 6  root_children=6  tree_nodes= 296  tree_max_depth= 6  (566.3ms)
+    sims= 1024  solved=False  plan_len= 6  root_children=6  tree_nodes=1305  tree_max_depth= 6  (2828.4ms)
+    sims= 4096  solved=False  plan_len= 7  root_children=6  tree_nodes=4795  tree_max_depth= 7  (19014.5ms)
+nl-2-3  oracle=5  n_actions=7  greedy: solved=True plan_len=7
+    sims=   64  solved=False  plan_len= 3  root_children=6  tree_nodes=  67  tree_max_depth= 3  (111.7ms)
+    sims=  256  solved=False  plan_len= 5  root_children=6  tree_nodes= 289  tree_max_depth= 5  (590.1ms)
+    sims= 1024  solved=False  plan_len= 6  root_children=6  tree_nodes=1151  tree_max_depth= 6  (2417.1ms)
+    sims= 4096  solved=False  plan_len= 6  root_children=6  tree_nodes=4504  tree_max_depth= 7  (13278.7ms)
+nl-2-4  oracle=2  n_actions=3  greedy: solved=True plan_len=3
+    sims=   64  solved=True   plan_len= 3  root_children=3  tree_nodes=  72  tree_max_depth= 4  (56.9ms)
+    sims=  256  solved=True   plan_len= 3  root_children=3  tree_nodes=  99  tree_max_depth= 5  (175.0ms)
+    sims= 1024  solved=True   plan_len= 3  root_children=3  tree_nodes= 191  tree_max_depth= 5  (672.0ms)
+    sims= 4096  solved=True   plan_len= 3  root_children=3  tree_nodes= 236  tree_max_depth= 6  (3125.2ms)
+nl-2-5  oracle=5  n_actions=7  greedy: solved=True plan_len=7
+    sims=   64  solved=False  plan_len= 4  root_children=6  tree_nodes=  75  tree_max_depth= 4  (111.7ms)
+    sims=  256  solved=False  plan_len= 5  root_children=6  tree_nodes= 325  tree_max_depth= 5  (531.5ms)
+    sims= 1024  solved=False  plan_len= 6  root_children=6  tree_nodes=1210  tree_max_depth= 6  (2295.8ms)
+    sims= 4096  solved=False  plan_len= 6  root_children=6  tree_nodes=4531  tree_max_depth= 6  (13209.1ms)
+nl-3-0  oracle=2  n_actions=3  greedy: solved=True plan_len=3
+    sims=   64  solved=True   plan_len= 3  root_children=3  tree_nodes=  72  tree_max_depth= 4  (57.0ms)
+    sims=  256  solved=True   plan_len= 3  root_children=3  tree_nodes=  99  tree_max_depth= 5  (175.7ms)
+    sims= 1024  solved=True   plan_len= 3  root_children=3  tree_nodes= 191  tree_max_depth= 5  (671.5ms)
+    sims= 4096  solved=True   plan_len= 3  root_children=3  tree_nodes= 236  tree_max_depth= 6  (3037.3ms)
+nl-3-1  oracle=1  n_actions=2  greedy: solved=True plan_len=2
+    sims=   64  solved=True   plan_len= 2  root_children=2  tree_nodes=  19  tree_max_depth= 4  (29.2ms)
+    sims=  256  solved=True   plan_len= 2  root_children=2  tree_nodes=  21  tree_max_depth= 4  (99.9ms)
+    sims= 1024  solved=True   plan_len= 2  root_children=2  tree_nodes=  29  tree_max_depth= 5  (414.5ms)
+    sims= 4096  solved=True   plan_len= 2  root_children=2  tree_nodes=  31  tree_max_depth= 5  (1920.0ms)
+nl-3-2  oracle=6  n_actions=8  greedy: solved=True plan_len=8
+    sims=   64  solved=False  plan_len= 4  root_children=6  tree_nodes=  77  tree_max_depth= 4  (124.4ms)
+    sims=  256  solved=False  plan_len= 5  root_children=6  tree_nodes= 345  tree_max_depth= 5  (617.8ms)
+    sims= 1024  solved=False  plan_len= 6  root_children=6  tree_nodes=1235  tree_max_depth= 6  (2522.3ms)
+    sims= 4096  solved=False  plan_len= 7  root_children=6  tree_nodes=4302  tree_max_depth= 7  (14482.7ms)
+nl-3-3  oracle=3  n_actions=5  greedy: solved=True plan_len=5
+    sims=   64  solved=False  plan_len= 3  root_children=5  tree_nodes=  66  tree_max_depth= 3  (94.2ms)
+    sims=  256  solved=True   plan_len= 5  root_children=5  tree_nodes= 282  tree_max_depth= 5  (425.1ms)
+    sims= 1024  solved=True   plan_len= 5  root_children=5  tree_nodes=1119  tree_max_depth= 5  (1965.4ms)
+    sims= 4096  solved=True   plan_len= 5  root_children=5  tree_nodes=4283  tree_max_depth= 6  (9655.2ms)
+nl-3-4  oracle=3  n_actions=4  greedy: solved=True plan_len=4
+    sims=   64  solved=True   plan_len= 4  root_children=4  tree_nodes=  77  tree_max_depth= 4  (67.5ms)
+    sims=  256  solved=True   plan_len= 4  root_children=4  tree_nodes= 280  tree_max_depth= 5  (298.9ms)
+    sims= 1024  solved=True   plan_len= 4  root_children=4  tree_nodes= 655  tree_max_depth= 5  (1187.3ms)
+    sims= 4096  solved=True   plan_len= 4  root_children=4  tree_nodes=1298  tree_max_depth= 6  (4628.8ms)
+nl-3-5  oracle=6  n_actions=8  greedy: solved=True plan_len=8
+    sims=   64  solved=False  plan_len= 4  root_children=6  tree_nodes=  79  tree_max_depth= 4  (123.7ms)
+    sims=  256  solved=False  plan_len= 5  root_children=6  tree_nodes= 307  tree_max_depth= 5  (608.4ms)
+    sims= 1024  solved=False  plan_len= 6  root_children=6  tree_nodes=1194  tree_max_depth= 6  (2778.8ms)
+    sims= 4096  solved=False  plan_len= 6  root_children=6  tree_nodes=4839  tree_max_depth= 6  (17125.8ms)
+
+========================================================================
+SUMMARY
+{
+  "solve_rate_by_sim_budget": {
+    "64": 0.389,
+    "256": 0.444,
+    "1024": 0.611,
+    "4096": 0.722
+  },
+  "solve_rate_by_oracle_actions_at_1024_sims": {
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 0.6,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 0.0
+  },
+  "greedy_solve_rate": 1.0
+}
+
+full evidence: /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/mcts_budget_probe.json

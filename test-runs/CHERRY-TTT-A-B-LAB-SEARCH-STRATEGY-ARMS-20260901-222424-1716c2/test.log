@@ -1,0 +1,114 @@
+2026-09-01 17:24:24 INFO     [cherry_ttt.ab_lab] ========================================================================
+2026-09-01 17:24:24 INFO     [cherry_ttt.ab_lab] CHERRY_TTT A/B LAB — SEARCH-STRATEGY ARMS
+2026-09-01 17:24:24 INFO     [cherry_ttt.ab_lab] Run ID: CHERRY-TTT-A-B-LAB-SEARCH-STRATEGY-ARMS-20260901-222424-1716c2
+2026-09-01 17:24:24 INFO     [cherry_ttt.ab_lab] Artifacts: /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-A-B-LAB-SEARCH-STRATEGY-ARMS-20260901-222424-1716c2
+2026-09-01 17:24:24 INFO     [cherry_ttt.ab_lab] ========================================================================
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Running 9 conditions (3 mcts_sim budgets x 3 seeds), 6 instances each
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=16 seed=1: instances=['nl-1-0', 'nl-1-1', 'nl-1-2', 'nl-1-3', 'nl-1-4', 'nl-1-5'] oracle_actions=[1, 4, 4, 4, 1, 4]
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=16 seed=1 finished in 137.47ms
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [greedy_react] solved=6/6 env_calls=50 committed=25 wall_ms=1200.00 regret=7
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [bon_8] solved=6/6 env_calls=288 committed=25 wall_ms=2600.00 regret=7
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [mcts] solved=2/6 env_calls=224 committed=16 wall_ms=768.00 regret=2
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [mcts_l3_speculative] solved=2/6 env_calls=224 committed=16 wall_ms=248.00 regret=2
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=16 seed=2: instances=['nl-2-0', 'nl-2-1', 'nl-2-2', 'nl-2-3', 'nl-2-4', 'nl-2-5'] oracle_actions=[1, 4, 7, 5, 2, 5]
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=16 seed=2 finished in 220.33ms
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [greedy_react] solved=6/6 env_calls=68 committed=34 wall_ms=1632.00 regret=10
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [bon_8] solved=6/6 env_calls=506 committed=34 wall_ms=3536.00 regret=10
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [mcts] solved=2/6 env_calls=226 committed=17 wall_ms=816.00 regret=2
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [mcts_l3_speculative] solved=2/6 env_calls=226 committed=17 wall_ms=248.50 regret=2
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=16 seed=3: instances=['nl-3-0', 'nl-3-1', 'nl-3-2', 'nl-3-3', 'nl-3-4', 'nl-3-5'] oracle_actions=[2, 1, 6, 3, 3, 6]
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=16 seed=3 finished in 179.08ms
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [greedy_react] solved=6/6 env_calls=60 committed=30 wall_ms=1440.00 regret=9
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [bon_8] solved=6/6 env_calls=424 committed=30 wall_ms=3120.00 regret=9
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [mcts] solved=2/6 env_calls=226 committed=17 wall_ms=816.00 regret=2
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [mcts_l3_speculative] solved=2/6 env_calls=226 committed=17 wall_ms=248.50 regret=2
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=32 seed=1: instances=['nl-1-0', 'nl-1-1', 'nl-1-2', 'nl-1-3', 'nl-1-4', 'nl-1-5'] oracle_actions=[1, 4, 4, 4, 1, 4]
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=32 seed=1 finished in 247.30ms
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [greedy_react] solved=6/6 env_calls=50 committed=25 wall_ms=1200.00 regret=7
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [bon_8] solved=6/6 env_calls=288 committed=25 wall_ms=2600.00 regret=7
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [mcts] solved=2/6 env_calls=416 committed=16 wall_ms=768.00 regret=2
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab]   [mcts_l3_speculative] solved=2/6 env_calls=416 committed=16 wall_ms=248.00 regret=2
+2026-09-01 17:24:25 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=32 seed=2: instances=['nl-2-0', 'nl-2-1', 'nl-2-2', 'nl-2-3', 'nl-2-4', 'nl-2-5'] oracle_actions=[1, 4, 7, 5, 2, 5]
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=32 seed=2 finished in 344.25ms
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [greedy_react] solved=6/6 env_calls=68 committed=34 wall_ms=1632.00 regret=10
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [bon_8] solved=6/6 env_calls=506 committed=34 wall_ms=3536.00 regret=10
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [mcts] solved=2/6 env_calls=420 committed=18 wall_ms=864.00 regret=2
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [mcts_l3_speculative] solved=2/6 env_calls=420 committed=18 wall_ms=249.00 regret=2
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=32 seed=3: instances=['nl-3-0', 'nl-3-1', 'nl-3-2', 'nl-3-3', 'nl-3-4', 'nl-3-5'] oracle_actions=[2, 1, 6, 3, 3, 6]
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=32 seed=3 finished in 294.83ms
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [greedy_react] solved=6/6 env_calls=60 committed=30 wall_ms=1440.00 regret=9
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [bon_8] solved=6/6 env_calls=424 committed=30 wall_ms=3120.00 regret=9
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [mcts] solved=2/6 env_calls=422 committed=19 wall_ms=912.00 regret=2
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [mcts_l3_speculative] solved=2/6 env_calls=422 committed=19 wall_ms=249.50 regret=2
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=64 seed=1: instances=['nl-1-0', 'nl-1-1', 'nl-1-2', 'nl-1-3', 'nl-1-4', 'nl-1-5'] oracle_actions=[1, 4, 4, 4, 1, 4]
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=64 seed=1 finished in 445.80ms
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [greedy_react] solved=6/6 env_calls=50 committed=25 wall_ms=1200.00 regret=7
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [bon_8] solved=6/6 env_calls=288 committed=25 wall_ms=2600.00 regret=7
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [mcts] solved=2/6 env_calls=800 committed=16 wall_ms=768.00 regret=2
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab]   [mcts_l3_speculative] solved=2/6 env_calls=800 committed=16 wall_ms=248.00 regret=2
+2026-09-01 17:24:26 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=64 seed=2: instances=['nl-2-0', 'nl-2-1', 'nl-2-2', 'nl-2-3', 'nl-2-4', 'nl-2-5'] oracle_actions=[1, 4, 7, 5, 2, 5]
+2026-09-01 17:24:27 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=64 seed=2 finished in 623.67ms
+2026-09-01 17:24:27 INFO     [cherry_ttt.ab_lab]   [greedy_react] solved=6/6 env_calls=68 committed=34 wall_ms=1632.00 regret=10
+2026-09-01 17:24:27 INFO     [cherry_ttt.ab_lab]   [bon_8] solved=6/6 env_calls=506 committed=34 wall_ms=3536.00 regret=10
+2026-09-01 17:24:27 INFO     [cherry_ttt.ab_lab]   [mcts] solved=2/6 env_calls=808 committed=20 wall_ms=960.00 regret=2
+2026-09-01 17:24:27 INFO     [cherry_ttt.ab_lab]   [mcts_l3_speculative] solved=2/6 env_calls=808 committed=20 wall_ms=250.00 regret=2
+2026-09-01 17:24:27 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=64 seed=3: instances=['nl-3-0', 'nl-3-1', 'nl-3-2', 'nl-3-3', 'nl-3-4', 'nl-3-5'] oracle_actions=[2, 1, 6, 3, 3, 6]
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] Condition mcts_sims=64 seed=3 finished in 586.23ms
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab]   [greedy_react] solved=6/6 env_calls=60 committed=30 wall_ms=1440.00 regret=9
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab]   [bon_8] solved=6/6 env_calls=424 committed=30 wall_ms=3120.00 regret=9
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab]   [mcts] solved=3/6 env_calls=808 committed=20 wall_ms=960.00 regret=3
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab]   [mcts_l3_speculative] solved=3/6 env_calls=808 committed=20 wall_ms=250.00 regret=3
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] Aggregate across 9 conditions:
+{
+  "greedy_react": {
+    "solve_rate": 1.0,
+    "solved": 54,
+    "n": 54,
+    "mean_wall_ms_per_instance": 237.333,
+    "mean_env_calls_per_instance": 9.889,
+    "mean_committed_actions_per_instance": 4.944,
+    "total_regret_actions": 78
+  },
+  "bon_8": {
+    "solve_rate": 1.0,
+    "solved": 54,
+    "n": 54,
+    "mean_wall_ms_per_instance": 514.222,
+    "mean_env_calls_per_instance": 67.667,
+    "mean_committed_actions_per_instance": 4.944,
+    "total_regret_actions": 78
+  },
+  "mcts": {
+    "solve_rate": 0.3519,
+    "solved": 19,
+    "n": 54,
+    "mean_wall_ms_per_instance": 141.333,
+    "mean_env_calls_per_instance": 80.556,
+    "mean_committed_actions_per_instance": 2.944,
+    "total_regret_actions": 19
+  },
+  "mcts_l3_speculative": {
+    "solve_rate": 0.3519,
+    "solved": 19,
+    "n": 54,
+    "mean_wall_ms_per_instance": 41.472,
+    "mean_env_calls_per_instance": 80.556,
+    "mean_committed_actions_per_instance": 2.944,
+    "total_regret_actions": 19
+  }
+}
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] §10.1 speculative-overlap finding: {
+  "mcts_serial_mean_wall_ms": 141.333,
+  "mcts_l3_speculative_mean_wall_ms": 41.472,
+  "l3_wall_reduction_pct": 70.66,
+  "mcts_solve_rate": 0.3519,
+  "mcts_l3_speculative_solve_rate": 0.3519,
+  "solve_rate_matched": true
+}
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] ========================================================================
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] FINAL VERDICT: PASS
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] SUMMARY: cherry_ttt four-arm search-strategy A/B lab: 9 conditions (3 MCTS sim budgets x 3 seeds), 54 instance-runs per arm. Aggregate solve rates — greedy_react=1.0, bon_8=1.0, mcts=0.3519, mcts_l3_speculative=0.3519. L3 speculative wall-clock vs serial MCTS: 70.66% (positive = faster) at matched solve rate.
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] manifest.json: /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-A-B-LAB-SEARCH-STRATEGY-ARMS-20260901-222424-1716c2/manifest.json
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] report.md:     /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-A-B-LAB-SEARCH-STRATEGY-ARMS-20260901-222424-1716c2/report.md
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] test.log:      /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-A-B-LAB-SEARCH-STRATEGY-ARMS-20260901-222424-1716c2/test.log
+2026-09-01 17:24:28 INFO     [cherry_ttt.ab_lab] ========================================================================

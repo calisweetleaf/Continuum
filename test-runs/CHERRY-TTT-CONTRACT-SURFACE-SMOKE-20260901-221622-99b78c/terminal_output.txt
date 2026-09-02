@@ -1,0 +1,245 @@
+17:16:22 INFO     ========================================================================
+17:16:22 INFO     CHERRY_TTT CONTRACT SURFACE SMOKE
+17:16:22 INFO     Run ID: CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c
+17:16:22 INFO     Artifacts: /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c
+17:16:22 INFO     ========================================================================
+17:16:22 INFO     Phase 1: package import and version contract
+17:16:22 INFO     Phase 2: CLI smoke_report()
+17:16:22 INFO     smoke_report() returned: {
+  "core": {
+    "canonical_id": "7201c1adf2bdce8b",
+    "jcs_deterministic": true,
+    "cost_vector_fields": [
+      "env_calls",
+      "model_tokens",
+      "risk",
+      "wall_ms"
+    ]
+  },
+  "schema": {
+    "tool_count": 13,
+    "namespaces": [
+      "fs",
+      "kv",
+      "lexical",
+      "sql"
+    ]
+  },
+  "predicates": {
+    "registry_type": "PredicateRegistry"
+  },
+  "substrates": {
+    "memory_kv": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "sqlite": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "filesystem": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "attention": {
+    "topk_keys": [
+      "a",
+      "b"
+    ],
+    "store_stats": {
+      "records": 2,
+      "pages": 1,
+      "dim": 4
+    }
+  },
+  "metrics": {
+    "action_density": 0.75,
+    "gamma_throughput": 0.04668888888888889
+  },
+  "search": {
+    "algorithms": [
+      "EnvMCTS",
+      "EnvAStar",
+      "BestOfNActionSampler"
+    ],
+    "path_to_id_deterministic": true,
+    "action_distance_same_tool": 0.6667,
+    "action_distance_cross_tool": 1.0
+  },
+  "speculate": {
+    "gamma_initial": 5,
+    "gamma_after_55_perfect": 6,
+    "template_bind": {
+      "k": "test_key",
+      "v": 1
+    },
+    "drafter_protocol": true
+  },
+  "encode": {
+    "dim": 64,
+    "json_deterministic": true,
+    "token_shape": [
+      64
+    ]
+  },
+  "collect": {
+    "sample_status": "SOLVED",
+    "group_id": "3554d2b8a1e34099"
+  },
+  "interleave": {
+    "branch_id": "4f53cda18c2baa0c",
+    "reasoning_context_valid": true
+  },
+  "value": {
+    "linear_score": 36.0,
+    "conformal_score": 35.54,
+    "calibration_applied": true
+  },
+  "experiment": {
+    "instances_generated": 2,
+    "oracle_actions": [
+      1,
+      2
+    ],
+    "archive_available": false
+  },
+  "mdp": {
+    "lexical_initial_depth": 0,
+    "lexical_ctx": "start"
+  }
+}
+17:16:22 INFO     Phase 3: core type canonical identity
+17:16:22 INFO     Phase 4: cost vector invariant
+17:16:22 INFO     Phase 5: schema registry
+17:16:22 INFO     Phase 6: predicate registry
+17:16:22 INFO     Phase 7: search algorithms
+17:16:22 INFO     Phase 8: speculative execution stack
+17:16:22 INFO     Phase 9: encoder determinism
+17:16:22 INFO     Phase 10: trajectory collector
+17:16:22 INFO     Phase 11: interleave context
+17:16:22 INFO     Phase 12: value heads
+17:16:22 INFO     Phase 13: density metrics
+17:16:22 INFO     Phase 14: CLI entry point
+17:16:22 INFO     $ /home/daeron/Projects/cherry-ttt-digital-geomancy/.venv/bin/python -m cherry_ttt.cli smoke
+17:16:22 INFO     exit=0
+{
+  "attention": {
+    "store_stats": {
+      "dim": 4,
+      "pages": 1,
+      "records": 2
+    },
+    "topk_keys": [
+      "a",
+      "b"
+    ]
+  },
+  "collect": {
+    "group_id": "3554d2b8a1e34099",
+    "sample_status": "SOLVED"
+  },
+  "core": {
+    "canonical_id": "7201c1adf2bdce8b",
+    "cost_vector_fields": [
+      "env_calls",
+      "model_tokens",
+      "risk",
+      "wall_ms"
+    ],
+    "jcs_deterministic": true
+  },
+  "encode": {
+    "dim": 64,
+    "json_deterministic": true,
+    "token_shape": [
+      64
+    ]
+  },
+  "experiment": {
+    "archive_available": false,
+    "instances_generated": 2,
+    "oracle_actions": [
+      1,
+      2
+    ]
+  },
+  "interleave": {
+    "branch_id": "4f53cda18c2baa0c",
+    "reasoning_context_valid": true
+  },
+  "mdp": {
+    "lexical_ctx": "start",
+    "lexical_initial_depth": 0
+  },
+  "metrics": {
+    "action_density": 0.75,
+    "gamma_throughput": 0.04668888888888889
+  },
+  "predicates": {
+    "registry_type": "PredicateRegistry"
+  },
+  "schema": {
+    "namespaces": [
+      "fs",
+      "kv",
+      "lexical",
+      "sql"
+    ],
+    "tool_count": 13
+  },
+  "search": {
+    "action_distance_cross_tool": 1.0,
+    "action_distance_same_tool": 0.6667,
+    "algorithms": [
+      "EnvMCTS",
+      "EnvAStar",
+      "BestOfNActionSampler"
+    ],
+    "path_to_id_deterministic": true
+  },
+  "speculate": {
+    "drafter_protocol": true,
+    "gamma_after_55_perfect": 6,
+    "gamma_initial": 5,
+    "template_bind": {
+      "k": "test_key",
+      "v": 1
+    }
+  },
+  "substrates": {
+    "filesystem": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "memory_kv": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "sqlite": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "value": {
+    "calibration_applied": true,
+    "conformal_score": 35.54,
+    "linear_score": 36.0
+  }
+}
+
+17:16:22 INFO     [PASS] package-import-and-version
+17:16:22 INFO     [PASS] smoke-report-complete
+17:16:22 INFO     [PASS] canonical-identity-key-order-invariant
+17:16:22 INFO     [PASS] jcs-deterministic
+17:16:22 INFO     [PASS] cost-vector-non-collapsible
+17:16:22 INFO     [PASS] schema-registry-four-namespaces
+17:16:22 INFO     [PASS] predicate-registry-functional
+17:16:22 INFO     [PASS] search-algorithms-instantiable
+17:16:22 INFO     [PASS] speculative-gamma-controller
+17:16:22 INFO     [PASS] encoder-deterministic-fixed-dim
+17:16:22 INFO     [PASS] collector-importable
+17:16:22 INFO     [PASS] interleave-importable
+17:16:22 INFO     [PASS] value-head-callable
+17:16:22 INFO     [PASS] density-metrics-bounded
+17:16:22 INFO     [PASS] cli-entry-point-smoke
+17:16:22 INFO     ========================================================================
+17:16:22 INFO     FINAL VERDICT: PASS
+17:16:22 INFO     manifest.json: /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c/manifest.json
+17:16:22 INFO     report.md:     /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c/report.md
+17:16:22 INFO     test.log:      /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c/test.log
+17:16:22 INFO     ========================================================================
+
+{
+  "run_id": "CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c",
+  "test_name": "CHERRY_TTT CONTRACT SURFACE SMOKE",
+  "verdict": "PASS",
+  "elapsed_s": 0.350334,
+  "artifacts": {
+    "manifest": "/home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c/manifest.json",
+    "report": "/home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c/report.md",
+    "log": "/home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c/test.log"
+  }
+}

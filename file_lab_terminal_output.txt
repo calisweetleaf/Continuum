@@ -1,0 +1,44 @@
+file-1-0 oracle=2  greedy: solved=True steps=2 real_wall_ms=0.4189 wallclock_ms=3.2728  |  mcts(sims=512): solved=True plan_len=2 real_wall_ms=0.4153 wallclock_ms=309.4171
+file-1-1 oracle=4  greedy: solved=True steps=4 real_wall_ms=0.9522 wallclock_ms=5.6913  |  mcts(sims=512): solved=True plan_len=4 real_wall_ms=1.29 wallclock_ms=2059.3517
+file-1-2 oracle=4  greedy: solved=True steps=4 real_wall_ms=0.9791 wallclock_ms=6.9373  |  mcts(sims=512): solved=True plan_len=4 real_wall_ms=1.3203 wallclock_ms=2072.433
+file-1-3 oracle=5  greedy: solved=True steps=5 real_wall_ms=1.3461 wallclock_ms=9.0599  |  mcts(sims=512): solved=True plan_len=5 real_wall_ms=1.7891 wallclock_ms=3145.1619
+file-1-4 oracle=6  greedy: solved=True steps=6 real_wall_ms=1.7611 wallclock_ms=12.7547  |  mcts(sims=512): solved=True plan_len=5 real_wall_ms=2.0255 wallclock_ms=4217.905
+file-1-5 oracle=3  greedy: solved=True steps=3 real_wall_ms=0.7369 wallclock_ms=4.3052  |  mcts(sims=512): solved=True plan_len=3 real_wall_ms=0.7771 wallclock_ms=668.4504
+file-2-0 oracle=1  greedy: solved=True steps=1 real_wall_ms=0.1715 wallclock_ms=1.117  |  mcts(sims=512): solved=True plan_len=1 real_wall_ms=0.1652 wallclock_ms=75.009
+file-2-1 oracle=3  greedy: solved=True steps=3 real_wall_ms=0.6507 wallclock_ms=3.8256  |  mcts(sims=512): solved=True plan_len=3 real_wall_ms=0.7702 wallclock_ms=669.466
+file-2-2 oracle=4  greedy: solved=True steps=4 real_wall_ms=0.9345 wallclock_ms=6.4588  |  mcts(sims=512): solved=True plan_len=4 real_wall_ms=1.3606 wallclock_ms=2118.5676
+file-2-3 oracle=4  greedy: solved=True steps=4 real_wall_ms=0.9809 wallclock_ms=7.027  |  mcts(sims=512): solved=True plan_len=4 real_wall_ms=1.3403 wallclock_ms=2073.1027
+file-2-4 oracle=5  greedy: solved=True steps=5 real_wall_ms=1.3347 wallclock_ms=9.2175  |  mcts(sims=512): solved=True plan_len=5 real_wall_ms=1.7883 wallclock_ms=3165.799
+file-2-5 oracle=6  greedy: solved=True steps=6 real_wall_ms=1.7259 wallclock_ms=11.8265  |  mcts(sims=512): solved=True plan_len=5 real_wall_ms=2.0484 wallclock_ms=4227.0975
+file-3-0 oracle=2  greedy: solved=True steps=2 real_wall_ms=0.4316 wallclock_ms=3.7444  |  mcts(sims=512): solved=True plan_len=2 real_wall_ms=0.4159 wallclock_ms=320.2016
+file-3-1 oracle=5  greedy: solved=True steps=5 real_wall_ms=1.3176 wallclock_ms=8.1873  |  mcts(sims=512): solved=True plan_len=5 real_wall_ms=1.7787 wallclock_ms=3151.8795
+file-3-2 oracle=1  greedy: solved=True steps=1 real_wall_ms=0.2105 wallclock_ms=1.2312  |  mcts(sims=512): solved=True plan_len=1 real_wall_ms=0.1676 wallclock_ms=77.8126
+file-3-3 oracle=3  greedy: solved=True steps=3 real_wall_ms=0.6492 wallclock_ms=3.7971  |  mcts(sims=512): solved=True plan_len=3 real_wall_ms=0.7946 wallclock_ms=678.5317
+file-3-4 oracle=3  greedy: solved=True steps=3 real_wall_ms=0.6527 wallclock_ms=4.1017  |  mcts(sims=512): solved=True plan_len=3 real_wall_ms=0.8353 wallclock_ms=688.9205
+file-3-5 oracle=1  greedy: solved=True steps=1 real_wall_ms=0.1657 wallclock_ms=1.072  |  mcts(sims=512): solved=True plan_len=1 real_wall_ms=0.1688 wallclock_ms=75.7351
+file-4-0 oracle=2  greedy: solved=True steps=2 real_wall_ms=0.3754 wallclock_ms=2.235  |  mcts(sims=512): solved=True plan_len=2 real_wall_ms=0.5276 wallclock_ms=321.8931
+file-4-1 oracle=2  greedy: solved=True steps=2 real_wall_ms=0.4944 wallclock_ms=3.2674  |  mcts(sims=512): solved=True plan_len=2 real_wall_ms=0.4482 wallclock_ms=331.6095
+file-4-2 oracle=4  greedy: solved=True steps=4 real_wall_ms=1.1144 wallclock_ms=7.6417  |  mcts(sims=512): solved=True plan_len=4 real_wall_ms=1.2873 wallclock_ms=2150.9358
+file-4-3 oracle=2  greedy: solved=True steps=2 real_wall_ms=0.3982 wallclock_ms=3.3491  |  mcts(sims=512): solved=True plan_len=2 real_wall_ms=0.4182 wallclock_ms=314.8442
+file-4-4 oracle=1  greedy: solved=True steps=1 real_wall_ms=0.1646 wallclock_ms=1.1461  |  mcts(sims=512): solved=True plan_len=1 real_wall_ms=0.1666 wallclock_ms=75.7381
+file-4-5 oracle=5  greedy: solved=True steps=5 real_wall_ms=1.3134 wallclock_ms=8.3041  |  mcts(sims=512): solved=True plan_len=5 real_wall_ms=1.7869 wallclock_ms=3200.8526
+file-5-0 oracle=5  greedy: solved=True steps=5 real_wall_ms=1.3309 wallclock_ms=9.6001  |  mcts(sims=512): solved=True plan_len=5 real_wall_ms=1.779 wallclock_ms=3204.4948
+file-5-1 oracle=2  greedy: solved=True steps=2 real_wall_ms=0.3996 wallclock_ms=2.518  |  mcts(sims=512): solved=True plan_len=2 real_wall_ms=0.4211 wallclock_ms=320.0934
+file-5-2 oracle=5  greedy: solved=True steps=5 real_wall_ms=1.3398 wallclock_ms=8.4271  |  mcts(sims=512): solved=True plan_len=5 real_wall_ms=1.7979 wallclock_ms=3213.4004
+file-5-3 oracle=4  greedy: solved=True steps=4 real_wall_ms=0.9586 wallclock_ms=6.7484  |  mcts(sims=512): solved=True plan_len=4 real_wall_ms=1.3327 wallclock_ms=2100.7702
+file-5-4 oracle=3  greedy: solved=True steps=3 real_wall_ms=0.6556 wallclock_ms=4.1788  |  mcts(sims=512): solved=True plan_len=3 real_wall_ms=0.7756 wallclock_ms=675.5957
+file-5-5 oracle=1  greedy: solved=True steps=1 real_wall_ms=0.1782 wallclock_ms=1.1978  |  mcts(sims=512): solved=True plan_len=1 real_wall_ms=0.1802 wallclock_ms=77.9164
+
+========================================================================
+SUMMARY
+{
+  "n_instances": 30,
+  "greedy_solve_rate": 1.0,
+  "mcts_solve_rate": 1.0,
+  "mean_greedy_real_committed_wall_ms": 0.8048,
+  "mean_mcts_real_committed_wall_ms": 1.0057,
+  "mean_mcts_full_search_wallclock_ms": 1526.0995,
+  "note": "real_committed_wall_ms is the real Cost.wall_ms ContractMDP accumulated from actual fs.write calls on the committed plan (FileSystemSubstrate._ok/_err time.perf_counter()) -- no synthetic LatencyModel anywhere in this run. wallclock_ms is the outer time.perf_counter() around the whole call including MCTS's own tree-search overhead (Python object churn), which the SQLite-arm ab_lab could not distinguish because it used a modeled cost, not a measured one."
+}
+
+full evidence: /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/file_lab_probe.json

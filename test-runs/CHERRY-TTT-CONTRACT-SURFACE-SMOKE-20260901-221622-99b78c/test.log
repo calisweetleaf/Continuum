@@ -1,0 +1,233 @@
+2026-09-01 17:16:22 INFO     [agnostic.single_test] ========================================================================
+2026-09-01 17:16:22 INFO     [agnostic.single_test] CHERRY_TTT CONTRACT SURFACE SMOKE
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Run ID: CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Artifacts: /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c
+2026-09-01 17:16:22 INFO     [agnostic.single_test] ========================================================================
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 1: package import and version contract
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 2: CLI smoke_report()
+2026-09-01 17:16:22 INFO     [agnostic.single_test] smoke_report() returned: {
+  "core": {
+    "canonical_id": "7201c1adf2bdce8b",
+    "jcs_deterministic": true,
+    "cost_vector_fields": [
+      "env_calls",
+      "model_tokens",
+      "risk",
+      "wall_ms"
+    ]
+  },
+  "schema": {
+    "tool_count": 13,
+    "namespaces": [
+      "fs",
+      "kv",
+      "lexical",
+      "sql"
+    ]
+  },
+  "predicates": {
+    "registry_type": "PredicateRegistry"
+  },
+  "substrates": {
+    "memory_kv": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "sqlite": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "filesystem": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "attention": {
+    "topk_keys": [
+      "a",
+      "b"
+    ],
+    "store_stats": {
+      "records": 2,
+      "pages": 1,
+      "dim": 4
+    }
+  },
+  "metrics": {
+    "action_density": 0.75,
+    "gamma_throughput": 0.04668888888888889
+  },
+  "search": {
+    "algorithms": [
+      "EnvMCTS",
+      "EnvAStar",
+      "BestOfNActionSampler"
+    ],
+    "path_to_id_deterministic": true,
+    "action_distance_same_tool": 0.6667,
+    "action_distance_cross_tool": 1.0
+  },
+  "speculate": {
+    "gamma_initial": 5,
+    "gamma_after_55_perfect": 6,
+    "template_bind": {
+      "k": "test_key",
+      "v": 1
+    },
+    "drafter_protocol": true
+  },
+  "encode": {
+    "dim": 64,
+    "json_deterministic": true,
+    "token_shape": [
+      64
+    ]
+  },
+  "collect": {
+    "sample_status": "SOLVED",
+    "group_id": "3554d2b8a1e34099"
+  },
+  "interleave": {
+    "branch_id": "4f53cda18c2baa0c",
+    "reasoning_context_valid": true
+  },
+  "value": {
+    "linear_score": 36.0,
+    "conformal_score": 35.54,
+    "calibration_applied": true
+  },
+  "experiment": {
+    "instances_generated": 2,
+    "oracle_actions": [
+      1,
+      2
+    ],
+    "archive_available": false
+  },
+  "mdp": {
+    "lexical_initial_depth": 0,
+    "lexical_ctx": "start"
+  }
+}
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 3: core type canonical identity
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 4: cost vector invariant
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 5: schema registry
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 6: predicate registry
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 7: search algorithms
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 8: speculative execution stack
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 9: encoder determinism
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 10: trajectory collector
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 11: interleave context
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 12: value heads
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 13: density metrics
+2026-09-01 17:16:22 INFO     [agnostic.single_test] Phase 14: CLI entry point
+2026-09-01 17:16:22 INFO     [agnostic.single_test] $ /home/daeron/Projects/cherry-ttt-digital-geomancy/.venv/bin/python -m cherry_ttt.cli smoke
+2026-09-01 17:16:22 INFO     [agnostic.single_test] exit=0
+{
+  "attention": {
+    "store_stats": {
+      "dim": 4,
+      "pages": 1,
+      "records": 2
+    },
+    "topk_keys": [
+      "a",
+      "b"
+    ]
+  },
+  "collect": {
+    "group_id": "3554d2b8a1e34099",
+    "sample_status": "SOLVED"
+  },
+  "core": {
+    "canonical_id": "7201c1adf2bdce8b",
+    "cost_vector_fields": [
+      "env_calls",
+      "model_tokens",
+      "risk",
+      "wall_ms"
+    ],
+    "jcs_deterministic": true
+  },
+  "encode": {
+    "dim": 64,
+    "json_deterministic": true,
+    "token_shape": [
+      64
+    ]
+  },
+  "experiment": {
+    "archive_available": false,
+    "instances_generated": 2,
+    "oracle_actions": [
+      1,
+      2
+    ]
+  },
+  "interleave": {
+    "branch_id": "4f53cda18c2baa0c",
+    "reasoning_context_valid": true
+  },
+  "mdp": {
+    "lexical_ctx": "start",
+    "lexical_initial_depth": 0
+  },
+  "metrics": {
+    "action_density": 0.75,
+    "gamma_throughput": 0.04668888888888889
+  },
+  "predicates": {
+    "registry_type": "PredicateRegistry"
+  },
+  "schema": {
+    "namespaces": [
+      "fs",
+      "kv",
+      "lexical",
+      "sql"
+    ],
+    "tool_count": 13
+  },
+  "search": {
+    "action_distance_cross_tool": 1.0,
+    "action_distance_same_tool": 0.6667,
+    "algorithms": [
+      "EnvMCTS",
+      "EnvAStar",
+      "BestOfNActionSampler"
+    ],
+    "path_to_id_deterministic": true
+  },
+  "speculate": {
+    "drafter_protocol": true,
+    "gamma_after_55_perfect": 6,
+    "gamma_initial": 5,
+    "template_bind": {
+      "k": "test_key",
+      "v": 1
+    }
+  },
+  "substrates": {
+    "filesystem": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "memory_kv": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "sqlite": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "value": {
+    "calibration_applied": true,
+    "conformal_score": 35.54,
+    "linear_score": 36.0
+  }
+}
+
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] package-import-and-version
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] smoke-report-complete
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] canonical-identity-key-order-invariant
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] jcs-deterministic
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] cost-vector-non-collapsible
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] schema-registry-four-namespaces
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] predicate-registry-functional
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] search-algorithms-instantiable
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] speculative-gamma-controller
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] encoder-deterministic-fixed-dim
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] collector-importable
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] interleave-importable
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] value-head-callable
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] density-metrics-bounded
+2026-09-01 17:16:22 INFO     [agnostic.single_test] [PASS] cli-entry-point-smoke
+2026-09-01 17:16:22 INFO     [agnostic.single_test] ========================================================================
+2026-09-01 17:16:22 INFO     [agnostic.single_test] FINAL VERDICT: PASS
+2026-09-01 17:16:22 INFO     [agnostic.single_test] manifest.json: /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c/manifest.json
+2026-09-01 17:16:22 INFO     [agnostic.single_test] report.md:     /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c/report.md
+2026-09-01 17:16:22 INFO     [agnostic.single_test] test.log:      /home/daeron/Projects/cherry-ttt-digital-geomancy/test-runs/CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c/test.log
+2026-09-01 17:16:22 INFO     [agnostic.single_test] ========================================================================

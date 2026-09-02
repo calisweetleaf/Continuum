@@ -1,0 +1,523 @@
+{
+  "records": [
+    {
+      "instance": "file-1-0",
+      "oracle_actions": 2,
+      "greedy": {
+        "solved": true,
+        "steps": 2,
+        "wall_ms_real": 0.4189,
+        "wall_ms_wallclock": 3.2728
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 2,
+        "wall_ms_real_committed": 0.4153,
+        "root_children": 2,
+        "wall_ms_wallclock": 309.4171
+      }
+    },
+    {
+      "instance": "file-1-1",
+      "oracle_actions": 4,
+      "greedy": {
+        "solved": true,
+        "steps": 4,
+        "wall_ms_real": 0.9522,
+        "wall_ms_wallclock": 5.6913
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 4,
+        "wall_ms_real_committed": 1.29,
+        "root_children": 4,
+        "wall_ms_wallclock": 2059.3517
+      }
+    },
+    {
+      "instance": "file-1-2",
+      "oracle_actions": 4,
+      "greedy": {
+        "solved": true,
+        "steps": 4,
+        "wall_ms_real": 0.9791,
+        "wall_ms_wallclock": 6.9373
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 4,
+        "wall_ms_real_committed": 1.3203,
+        "root_children": 4,
+        "wall_ms_wallclock": 2072.433
+      }
+    },
+    {
+      "instance": "file-1-3",
+      "oracle_actions": 5,
+      "greedy": {
+        "solved": true,
+        "steps": 5,
+        "wall_ms_real": 1.3461,
+        "wall_ms_wallclock": 9.0599
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 5,
+        "wall_ms_real_committed": 1.7891,
+        "root_children": 5,
+        "wall_ms_wallclock": 3145.1619
+      }
+    },
+    {
+      "instance": "file-1-4",
+      "oracle_actions": 6,
+      "greedy": {
+        "solved": true,
+        "steps": 6,
+        "wall_ms_real": 1.7611,
+        "wall_ms_wallclock": 12.7547
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 5,
+        "wall_ms_real_committed": 2.0255,
+        "root_children": 6,
+        "wall_ms_wallclock": 4217.905
+      }
+    },
+    {
+      "instance": "file-1-5",
+      "oracle_actions": 3,
+      "greedy": {
+        "solved": true,
+        "steps": 3,
+        "wall_ms_real": 0.7369,
+        "wall_ms_wallclock": 4.3052
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 3,
+        "wall_ms_real_committed": 0.7771,
+        "root_children": 3,
+        "wall_ms_wallclock": 668.4504
+      }
+    },
+    {
+      "instance": "file-2-0",
+      "oracle_actions": 1,
+      "greedy": {
+        "solved": true,
+        "steps": 1,
+        "wall_ms_real": 0.1715,
+        "wall_ms_wallclock": 1.117
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 1,
+        "wall_ms_real_committed": 0.1652,
+        "root_children": 1,
+        "wall_ms_wallclock": 75.009
+      }
+    },
+    {
+      "instance": "file-2-1",
+      "oracle_actions": 3,
+      "greedy": {
+        "solved": true,
+        "steps": 3,
+        "wall_ms_real": 0.6507,
+        "wall_ms_wallclock": 3.8256
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 3,
+        "wall_ms_real_committed": 0.7702,
+        "root_children": 3,
+        "wall_ms_wallclock": 669.466
+      }
+    },
+    {
+      "instance": "file-2-2",
+      "oracle_actions": 4,
+      "greedy": {
+        "solved": true,
+        "steps": 4,
+        "wall_ms_real": 0.9345,
+        "wall_ms_wallclock": 6.4588
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 4,
+        "wall_ms_real_committed": 1.3606,
+        "root_children": 4,
+        "wall_ms_wallclock": 2118.5676
+      }
+    },
+    {
+      "instance": "file-2-3",
+      "oracle_actions": 4,
+      "greedy": {
+        "solved": true,
+        "steps": 4,
+        "wall_ms_real": 0.9809,
+        "wall_ms_wallclock": 7.027
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 4,
+        "wall_ms_real_committed": 1.3403,
+        "root_children": 4,
+        "wall_ms_wallclock": 2073.1027
+      }
+    },
+    {
+      "instance": "file-2-4",
+      "oracle_actions": 5,
+      "greedy": {
+        "solved": true,
+        "steps": 5,
+        "wall_ms_real": 1.3347,
+        "wall_ms_wallclock": 9.2175
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 5,
+        "wall_ms_real_committed": 1.7883,
+        "root_children": 5,
+        "wall_ms_wallclock": 3165.799
+      }
+    },
+    {
+      "instance": "file-2-5",
+      "oracle_actions": 6,
+      "greedy": {
+        "solved": true,
+        "steps": 6,
+        "wall_ms_real": 1.7259,
+        "wall_ms_wallclock": 11.8265
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 5,
+        "wall_ms_real_committed": 2.0484,
+        "root_children": 6,
+        "wall_ms_wallclock": 4227.0975
+      }
+    },
+    {
+      "instance": "file-3-0",
+      "oracle_actions": 2,
+      "greedy": {
+        "solved": true,
+        "steps": 2,
+        "wall_ms_real": 0.4316,
+        "wall_ms_wallclock": 3.7444
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 2,
+        "wall_ms_real_committed": 0.4159,
+        "root_children": 2,
+        "wall_ms_wallclock": 320.2016
+      }
+    },
+    {
+      "instance": "file-3-1",
+      "oracle_actions": 5,
+      "greedy": {
+        "solved": true,
+        "steps": 5,
+        "wall_ms_real": 1.3176,
+        "wall_ms_wallclock": 8.1873
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 5,
+        "wall_ms_real_committed": 1.7787,
+        "root_children": 5,
+        "wall_ms_wallclock": 3151.8795
+      }
+    },
+    {
+      "instance": "file-3-2",
+      "oracle_actions": 1,
+      "greedy": {
+        "solved": true,
+        "steps": 1,
+        "wall_ms_real": 0.2105,
+        "wall_ms_wallclock": 1.2312
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 1,
+        "wall_ms_real_committed": 0.1676,
+        "root_children": 1,
+        "wall_ms_wallclock": 77.8126
+      }
+    },
+    {
+      "instance": "file-3-3",
+      "oracle_actions": 3,
+      "greedy": {
+        "solved": true,
+        "steps": 3,
+        "wall_ms_real": 0.6492,
+        "wall_ms_wallclock": 3.7971
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 3,
+        "wall_ms_real_committed": 0.7946,
+        "root_children": 3,
+        "wall_ms_wallclock": 678.5317
+      }
+    },
+    {
+      "instance": "file-3-4",
+      "oracle_actions": 3,
+      "greedy": {
+        "solved": true,
+        "steps": 3,
+        "wall_ms_real": 0.6527,
+        "wall_ms_wallclock": 4.1017
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 3,
+        "wall_ms_real_committed": 0.8353,
+        "root_children": 3,
+        "wall_ms_wallclock": 688.9205
+      }
+    },
+    {
+      "instance": "file-3-5",
+      "oracle_actions": 1,
+      "greedy": {
+        "solved": true,
+        "steps": 1,
+        "wall_ms_real": 0.1657,
+        "wall_ms_wallclock": 1.072
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 1,
+        "wall_ms_real_committed": 0.1688,
+        "root_children": 1,
+        "wall_ms_wallclock": 75.7351
+      }
+    },
+    {
+      "instance": "file-4-0",
+      "oracle_actions": 2,
+      "greedy": {
+        "solved": true,
+        "steps": 2,
+        "wall_ms_real": 0.3754,
+        "wall_ms_wallclock": 2.235
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 2,
+        "wall_ms_real_committed": 0.5276,
+        "root_children": 2,
+        "wall_ms_wallclock": 321.8931
+      }
+    },
+    {
+      "instance": "file-4-1",
+      "oracle_actions": 2,
+      "greedy": {
+        "solved": true,
+        "steps": 2,
+        "wall_ms_real": 0.4944,
+        "wall_ms_wallclock": 3.2674
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 2,
+        "wall_ms_real_committed": 0.4482,
+        "root_children": 2,
+        "wall_ms_wallclock": 331.6095
+      }
+    },
+    {
+      "instance": "file-4-2",
+      "oracle_actions": 4,
+      "greedy": {
+        "solved": true,
+        "steps": 4,
+        "wall_ms_real": 1.1144,
+        "wall_ms_wallclock": 7.6417
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 4,
+        "wall_ms_real_committed": 1.2873,
+        "root_children": 4,
+        "wall_ms_wallclock": 2150.9358
+      }
+    },
+    {
+      "instance": "file-4-3",
+      "oracle_actions": 2,
+      "greedy": {
+        "solved": true,
+        "steps": 2,
+        "wall_ms_real": 0.3982,
+        "wall_ms_wallclock": 3.3491
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 2,
+        "wall_ms_real_committed": 0.4182,
+        "root_children": 2,
+        "wall_ms_wallclock": 314.8442
+      }
+    },
+    {
+      "instance": "file-4-4",
+      "oracle_actions": 1,
+      "greedy": {
+        "solved": true,
+        "steps": 1,
+        "wall_ms_real": 0.1646,
+        "wall_ms_wallclock": 1.1461
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 1,
+        "wall_ms_real_committed": 0.1666,
+        "root_children": 1,
+        "wall_ms_wallclock": 75.7381
+      }
+    },
+    {
+      "instance": "file-4-5",
+      "oracle_actions": 5,
+      "greedy": {
+        "solved": true,
+        "steps": 5,
+        "wall_ms_real": 1.3134,
+        "wall_ms_wallclock": 8.3041
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 5,
+        "wall_ms_real_committed": 1.7869,
+        "root_children": 5,
+        "wall_ms_wallclock": 3200.8526
+      }
+    },
+    {
+      "instance": "file-5-0",
+      "oracle_actions": 5,
+      "greedy": {
+        "solved": true,
+        "steps": 5,
+        "wall_ms_real": 1.3309,
+        "wall_ms_wallclock": 9.6001
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 5,
+        "wall_ms_real_committed": 1.779,
+        "root_children": 5,
+        "wall_ms_wallclock": 3204.4948
+      }
+    },
+    {
+      "instance": "file-5-1",
+      "oracle_actions": 2,
+      "greedy": {
+        "solved": true,
+        "steps": 2,
+        "wall_ms_real": 0.3996,
+        "wall_ms_wallclock": 2.518
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 2,
+        "wall_ms_real_committed": 0.4211,
+        "root_children": 2,
+        "wall_ms_wallclock": 320.0934
+      }
+    },
+    {
+      "instance": "file-5-2",
+      "oracle_actions": 5,
+      "greedy": {
+        "solved": true,
+        "steps": 5,
+        "wall_ms_real": 1.3398,
+        "wall_ms_wallclock": 8.4271
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 5,
+        "wall_ms_real_committed": 1.7979,
+        "root_children": 5,
+        "wall_ms_wallclock": 3213.4004
+      }
+    },
+    {
+      "instance": "file-5-3",
+      "oracle_actions": 4,
+      "greedy": {
+        "solved": true,
+        "steps": 4,
+        "wall_ms_real": 0.9586,
+        "wall_ms_wallclock": 6.7484
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 4,
+        "wall_ms_real_committed": 1.3327,
+        "root_children": 4,
+        "wall_ms_wallclock": 2100.7702
+      }
+    },
+    {
+      "instance": "file-5-4",
+      "oracle_actions": 3,
+      "greedy": {
+        "solved": true,
+        "steps": 3,
+        "wall_ms_real": 0.6556,
+        "wall_ms_wallclock": 4.1788
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 3,
+        "wall_ms_real_committed": 0.7756,
+        "root_children": 3,
+        "wall_ms_wallclock": 675.5957
+      }
+    },
+    {
+      "instance": "file-5-5",
+      "oracle_actions": 1,
+      "greedy": {
+        "solved": true,
+        "steps": 1,
+        "wall_ms_real": 0.1782,
+        "wall_ms_wallclock": 1.1978
+      },
+      "mcts": {
+        "solved": true,
+        "plan_len": 1,
+        "wall_ms_real_committed": 0.1802,
+        "root_children": 1,
+        "wall_ms_wallclock": 77.9164
+      }
+    }
+  ],
+  "summary": {
+    "n_instances": 30,
+    "greedy_solve_rate": 1.0,
+    "mcts_solve_rate": 1.0,
+    "mean_greedy_real_committed_wall_ms": 0.8048,
+    "mean_mcts_real_committed_wall_ms": 1.0057,
+    "mean_mcts_full_search_wallclock_ms": 1526.0995,
+    "note": "real_committed_wall_ms is the real Cost.wall_ms ContractMDP accumulated from actual fs.write calls on the committed plan (FileSystemSubstrate._ok/_err time.perf_counter()) -- no synthetic LatencyModel anywhere in this run. wallclock_ms is the outer time.perf_counter() around the whole call including MCTS's own tree-search overhead (Python object churn), which the SQLite-arm ab_lab could not distinguish because it used a modeled cost, not a measured one."
+  }
+}

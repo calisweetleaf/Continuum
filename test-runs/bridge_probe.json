@@ -1,0 +1,28 @@
+{
+  "equalizer_metrics": {
+    "received": 0,
+    "committed": 4,
+    "equalized": 0,
+    "lawful_absent": 1
+  },
+  "sink_events_observed": 4,
+  "fabric_attend": {
+    "status": "ok",
+    "focus_stream_ids": [
+      "default"
+    ],
+    "selected_event_ids": [
+      "c5898367151542ecabe55abbe5a2ae57",
+      "1af57f218bf540188aa62ada47b9d920",
+      "20f0e49e887b40e0a924f784c5f62800",
+      "1fcd2c0d33e844a9be54622c4e7cb072"
+    ],
+    "receipt_mechanism": "exact_dense",
+    "receipt_complexity_class": "quadratic_arithmetic_full_materialization",
+    "receipt_candidates_before": 4,
+    "receipt_candidates_after": 4,
+    "receipt_topology_reason": "small_candidate_set_exact_is_legal"
+  },
+  "verified_read_matches_write": true,
+  "verified_missing_is_lawful_absent": true
+}

@@ -1,0 +1,449 @@
+{
+  "schema_version": "1.0",
+  "run_id": "CHERRY-TTT-CONTRACT-SURFACE-SMOKE-20260901-221622-99b78c",
+  "test_name": "CHERRY_TTT CONTRACT SURFACE SMOKE",
+  "verdict": "PASS",
+  "started_at_utc": "2026-09-01T22:16:22.314646+00:00",
+  "finished_at_utc": "2026-09-01T22:16:22.665637+00:00",
+  "elapsed_s": 0.350334,
+  "environment": {
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "python_executable": "/home/daeron/Projects/cherry-ttt-digital-geomancy/.venv/bin/python",
+    "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+    "cwd": "/home/daeron/Projects/cherry-ttt-digital-geomancy",
+    "project_root": "/home/daeron/Projects/cherry-ttt-digital-geomancy",
+    "runner": "/home/daeron/Projects/cherry-ttt-digital-geomancy/tests/run_test.py"
+  },
+  "acceptance": {
+    "total_checks": 15,
+    "passed_checks": 15,
+    "failed_checks": 0,
+    "checks": [
+      {
+        "name": "package-import-and-version",
+        "passed": true,
+        "detail": "",
+        "expected": "semantic version string (X.Y.Z)",
+        "observed": "0.2.0"
+      },
+      {
+        "name": "smoke-report-complete",
+        "passed": true,
+        "detail": "",
+        "expected": [
+          "core",
+          "schema",
+          "predicates",
+          "substrates",
+          "attention",
+          "metrics",
+          "search",
+          "speculate",
+          "encode",
+          "collect",
+          "interleave",
+          "value",
+          "experiment",
+          "mdp"
+        ],
+        "observed": [
+          "attention",
+          "collect",
+          "core",
+          "encode",
+          "experiment",
+          "interleave",
+          "mdp",
+          "metrics",
+          "predicates",
+          "schema",
+          "search",
+          "speculate",
+          "substrates",
+          "value"
+        ]
+      },
+      {
+        "name": "canonical-identity-key-order-invariant",
+        "passed": true,
+        "detail": "",
+        "expected": "identical canonical() for reordered args",
+        "observed": {
+          "id_a": "7201c1adf2bdce8b",
+          "id_b": "7201c1adf2bdce8b",
+          "match": true
+        }
+      },
+      {
+        "name": "jcs-deterministic",
+        "passed": true,
+        "detail": "",
+        "expected": "identical JCS output regardless of key insertion order",
+        "observed": "{\"a\":1,\"b\":2}"
+      },
+      {
+        "name": "cost-vector-non-collapsible",
+        "passed": true,
+        "detail": "",
+        "expected": "Cost carries wall_ms, model_tokens, env_calls, risk with no scalar collapse",
+        "observed": {
+          "wall_ms": 100.0,
+          "model_tokens": 50,
+          "env_calls": 3,
+          "risk": 0.1
+        }
+      },
+      {
+        "name": "schema-registry-four-namespaces",
+        "passed": true,
+        "detail": "",
+        "expected": [
+          "fs",
+          "kv",
+          "lexical",
+          "sql"
+        ],
+        "observed": [
+          "fs",
+          "kv",
+          "lexical",
+          "sql"
+        ]
+      },
+      {
+        "name": "predicate-registry-functional",
+        "passed": true,
+        "detail": "",
+        "expected": "PredicateRegistry.resolve is callable",
+        "observed": true
+      },
+      {
+        "name": "search-algorithms-instantiable",
+        "passed": true,
+        "detail": "",
+        "expected": "MCTS, A*, BoN all instantiate without substrate",
+        "observed": {
+          "mcts": true,
+          "astar": true,
+          "bon": true
+        }
+      },
+      {
+        "name": "speculative-gamma-controller",
+        "passed": true,
+        "detail": "",
+        "expected": "AdaptiveGammaController instantiates from default config",
+        "observed": true
+      },
+      {
+        "name": "encoder-deterministic-fixed-dim",
+        "passed": true,
+        "detail": "",
+        "expected": "identical vectors for identical input, shape=(16,)",
+        "observed": {
+          "deterministic": true,
+          "shape": [
+            16
+          ]
+        }
+      },
+      {
+        "name": "collector-importable",
+        "passed": true,
+        "detail": "",
+        "expected": "TrajectoryCollector is callable",
+        "observed": true
+      },
+      {
+        "name": "interleave-importable",
+        "passed": true,
+        "detail": "",
+        "expected": "ReasoningContext and BranchEventLedger are callable",
+        "observed": true
+      },
+      {
+        "name": "value-head-callable",
+        "passed": true,
+        "detail": "",
+        "expected": "LinearStateValue.score_vector returns float for zero features",
+        "observed": 0.0
+      },
+      {
+        "name": "density-metrics-bounded",
+        "passed": true,
+        "detail": "",
+        "expected": "action_density in [0,1], gamma_throughput > 0",
+        "observed": {
+          "action_density": 0.75,
+          "wasted_call_rate": 0.5,
+          "gamma_throughput": 0.04668888888888889
+        }
+      },
+      {
+        "name": "cli-entry-point-smoke",
+        "passed": true,
+        "detail": "",
+        "expected": "cherry-ttt smoke produces valid JSON with all 14 subsystem keys",
+        "observed": [
+          "attention",
+          "collect",
+          "core",
+          "encode",
+          "experiment",
+          "interleave",
+          "mdp",
+          "metrics",
+          "predicates",
+          "schema",
+          "search",
+          "speculate",
+          "substrates",
+          "value"
+        ]
+      }
+    ]
+  },
+  "result": {
+    "summary": "cherry_ttt v0.2.0 contract surface validated: CLI smoke_report exercised all three transactional substrates (MemoryKV, SQLite, FileSystem), candidate attention, and density metrics. Independent checks verified canonical identity (JCS/sha256), cost vector non-collapsibility, schema registry (4 namespaces), predicate registry, search algorithms (MCTS/A*/BoN), speculative execution stack, encoder determinism, trajectory collection, interleave context, and value heads. 15 acceptance checks across the full contract surface.",
+    "metrics": {
+      "smoke_elapsed_ms": 8.148,
+      "version": "0.2.0",
+      "total_checks": 15
+    },
+    "evidence": {
+      "smoke_report": {
+        "core": {
+          "canonical_id": "7201c1adf2bdce8b",
+          "jcs_deterministic": true,
+          "cost_vector_fields": [
+            "env_calls",
+            "model_tokens",
+            "risk",
+            "wall_ms"
+          ]
+        },
+        "schema": {
+          "tool_count": 13,
+          "namespaces": [
+            "fs",
+            "kv",
+            "lexical",
+            "sql"
+          ]
+        },
+        "predicates": {
+          "registry_type": "PredicateRegistry"
+        },
+        "substrates": {
+          "memory_kv": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "sqlite": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "filesystem": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+        },
+        "attention": {
+          "topk_keys": [
+            "a",
+            "b"
+          ],
+          "store_stats": {
+            "records": 2,
+            "pages": 1,
+            "dim": 4
+          }
+        },
+        "metrics": {
+          "action_density": 0.75,
+          "gamma_throughput": 0.04668888888888889
+        },
+        "search": {
+          "algorithms": [
+            "EnvMCTS",
+            "EnvAStar",
+            "BestOfNActionSampler"
+          ],
+          "path_to_id_deterministic": true,
+          "action_distance_same_tool": 0.6667,
+          "action_distance_cross_tool": 1.0
+        },
+        "speculate": {
+          "gamma_initial": 5,
+          "gamma_after_55_perfect": 6,
+          "template_bind": {
+            "k": "test_key",
+            "v": 1
+          },
+          "drafter_protocol": true
+        },
+        "encode": {
+          "dim": 64,
+          "json_deterministic": true,
+          "token_shape": [
+            64
+          ]
+        },
+        "collect": {
+          "sample_status": "SOLVED",
+          "group_id": "3554d2b8a1e34099"
+        },
+        "interleave": {
+          "branch_id": "4f53cda18c2baa0c",
+          "reasoning_context_valid": true
+        },
+        "value": {
+          "linear_score": 36.0,
+          "conformal_score": 35.54,
+          "calibration_applied": true
+        },
+        "experiment": {
+          "instances_generated": 2,
+          "oracle_actions": [
+            1,
+            2
+          ],
+          "archive_available": false
+        },
+        "mdp": {
+          "lexical_initial_depth": 0,
+          "lexical_ctx": "start"
+        }
+      },
+      "smoke_elapsed_ms": 8.148,
+      "canonical_id_a": "7201c1adf2bdce8b",
+      "canonical_id_b": "7201c1adf2bdce8b",
+      "jcs_output": "{\"a\":1,\"b\":2}",
+      "cost_fields": {
+        "wall_ms": 100.0,
+        "model_tokens": 50,
+        "env_calls": 3,
+        "risk": 0.1
+      },
+      "schema_namespaces": [
+        "fs",
+        "kv",
+        "lexical",
+        "sql"
+      ],
+      "predicate_resolve": true,
+      "search_configs": {
+        "mcts": "EnvMCTSConfig(n_simulations=100, c_puct=1.25, puct_c2=19652.0, temperature=1.0, max_depth=100, max_rollout_depth=50, n_actions=10, use_value_model=True, progressive_widening_alpha=0.5, depth_discount=0.95, reward_value_blend=0.5, serialize_tree=False)",
+        "astar": "EnvAStarConfig(max_nodes=200, max_depth=50, n_actions=8, heuristic_weight=1.0, temperature=0.8, use_value_heuristic=True)"
+      },
+      "gamma_config": "GammaControllerConfig(gamma=5, gamma_min=3, gamma_max=12, adapt_window=50, ema_decay=0.9)",
+      "encoder_shape": [
+        16
+      ],
+      "linear_value_output": 0.0,
+      "density_metrics": {
+        "action_density": 0.75,
+        "wasted_call_rate": 0.5,
+        "gamma_throughput": 0.04668888888888889
+      },
+      "cli_output": {
+        "attention": {
+          "store_stats": {
+            "dim": 4,
+            "pages": 1,
+            "records": 2
+          },
+          "topk_keys": [
+            "a",
+            "b"
+          ]
+        },
+        "collect": {
+          "group_id": "3554d2b8a1e34099",
+          "sample_status": "SOLVED"
+        },
+        "core": {
+          "canonical_id": "7201c1adf2bdce8b",
+          "cost_vector_fields": [
+            "env_calls",
+            "model_tokens",
+            "risk",
+            "wall_ms"
+          ],
+          "jcs_deterministic": true
+        },
+        "encode": {
+          "dim": 64,
+          "json_deterministic": true,
+          "token_shape": [
+            64
+          ]
+        },
+        "experiment": {
+          "archive_available": false,
+          "instances_generated": 2,
+          "oracle_actions": [
+            1,
+            2
+          ]
+        },
+        "interleave": {
+          "branch_id": "4f53cda18c2baa0c",
+          "reasoning_context_valid": true
+        },
+        "mdp": {
+          "lexical_ctx": "start",
+          "lexical_initial_depth": 0
+        },
+        "metrics": {
+          "action_density": 0.75,
+          "gamma_throughput": 0.04668888888888889
+        },
+        "predicates": {
+          "registry_type": "PredicateRegistry"
+        },
+        "schema": {
+          "namespaces": [
+            "fs",
+            "kv",
+            "lexical",
+            "sql"
+          ],
+          "tool_count": 13
+        },
+        "search": {
+          "action_distance_cross_tool": 1.0,
+          "action_distance_same_tool": 0.6667,
+          "algorithms": [
+            "EnvMCTS",
+            "EnvAStar",
+            "BestOfNActionSampler"
+          ],
+          "path_to_id_deterministic": true
+        },
+        "speculate": {
+          "drafter_protocol": true,
+          "gamma_after_55_perfect": 6,
+          "gamma_initial": 5,
+          "template_bind": {
+            "k": "test_key",
+            "v": 1
+          }
+        },
+        "substrates": {
+          "filesystem": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "memory_kv": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "sqlite": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+        },
+        "value": {
+          "calibration_applied": true,
+          "conformal_score": 35.54,
+          "linear_score": 36.0
+        }
+      }
+    },
+    "notes": [
+      "smoke_report() is the CLI integration surface — it exercises substrates, attention, and metrics through their real code paths.",
+      "Canonical identity is verified by constructing ActionCandidates with reordered args dicts.",
+      "Cost non-collapsibility is checked structurally: Cost must not expose scalar() or collapse() methods.",
+      "The archive substrate (ArchiveEpisodeSubstrate) is not exercised because it requires the optional httpx dependency."
+    ]
+  },
+  "error": null,
+  "artifacts": {
+    "manifest": "manifest.json",
+    "report": "report.md",
+    "log": "test.log"
+  }
+}

@@ -1,0 +1,904 @@
+{
+  "records": [
+    {
+      "instance": "nl-1-0",
+      "oracle_actions": 1,
+      "n_action_candidates": 2,
+      "greedy_plan_len": 2,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 64,
+          "tree_total_nodes": 19,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 29.073
+        },
+        "256": {
+          "sims": 256,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 256,
+          "tree_total_nodes": 21,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 99.716
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 1024,
+          "tree_total_nodes": 29,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 409.461
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 4096,
+          "tree_total_nodes": 31,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 1883.105
+        }
+      }
+    },
+    {
+      "instance": "nl-1-1",
+      "oracle_actions": 4,
+      "n_action_candidates": 5,
+      "greedy_plan_len": 5,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 3,
+          "root_children": 5,
+          "root_visits": 64,
+          "tree_total_nodes": 66,
+          "tree_max_depth_reached": 3,
+          "elapsed_ms": 74.795
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 4,
+          "root_children": 5,
+          "root_visits": 256,
+          "tree_total_nodes": 295,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 350.433
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 5,
+          "root_children": 5,
+          "root_visits": 1024,
+          "tree_total_nodes": 1281,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 1610.021
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 5,
+          "root_children": 5,
+          "root_visits": 4096,
+          "tree_total_nodes": 4962,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 8015.864
+        }
+      }
+    },
+    {
+      "instance": "nl-1-2",
+      "oracle_actions": 4,
+      "n_action_candidates": 5,
+      "greedy_plan_len": 5,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 3,
+          "root_children": 5,
+          "root_visits": 64,
+          "tree_total_nodes": 66,
+          "tree_max_depth_reached": 3,
+          "elapsed_ms": 78.108
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 4,
+          "root_children": 5,
+          "root_visits": 256,
+          "tree_total_nodes": 295,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 358.578
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 5,
+          "root_children": 5,
+          "root_visits": 1024,
+          "tree_total_nodes": 1281,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 1648.327
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 5,
+          "root_children": 5,
+          "root_visits": 4096,
+          "tree_total_nodes": 4962,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 7796.877
+        }
+      }
+    },
+    {
+      "instance": "nl-1-3",
+      "oracle_actions": 4,
+      "n_action_candidates": 6,
+      "greedy_plan_len": 6,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 3,
+          "root_children": 6,
+          "root_visits": 64,
+          "tree_total_nodes": 67,
+          "tree_max_depth_reached": 3,
+          "elapsed_ms": 97.22
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 4,
+          "root_children": 6,
+          "root_visits": 256,
+          "tree_total_nodes": 289,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 438.483
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": false,
+          "plan_len": 5,
+          "root_children": 6,
+          "root_visits": 1024,
+          "tree_total_nodes": 1212,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 2078.434
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 4096,
+          "tree_total_nodes": 5519,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 12253.42
+        }
+      }
+    },
+    {
+      "instance": "nl-1-4",
+      "oracle_actions": 1,
+      "n_action_candidates": 2,
+      "greedy_plan_len": 2,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 64,
+          "tree_total_nodes": 19,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 29.237
+        },
+        "256": {
+          "sims": 256,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 256,
+          "tree_total_nodes": 21,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 99.182
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 1024,
+          "tree_total_nodes": 29,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 404.261
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 4096,
+          "tree_total_nodes": 31,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 1924.268
+        }
+      }
+    },
+    {
+      "instance": "nl-1-5",
+      "oracle_actions": 4,
+      "n_action_candidates": 5,
+      "greedy_plan_len": 5,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 3,
+          "root_children": 5,
+          "root_visits": 64,
+          "tree_total_nodes": 66,
+          "tree_max_depth_reached": 3,
+          "elapsed_ms": 76.64
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 4,
+          "root_children": 5,
+          "root_visits": 256,
+          "tree_total_nodes": 295,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 442.741
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 5,
+          "root_children": 5,
+          "root_visits": 1024,
+          "tree_total_nodes": 1281,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 1583.162
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 5,
+          "root_children": 5,
+          "root_visits": 4096,
+          "tree_total_nodes": 4962,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 7911.42
+        }
+      }
+    },
+    {
+      "instance": "nl-2-0",
+      "oracle_actions": 1,
+      "n_action_candidates": 2,
+      "greedy_plan_len": 2,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 64,
+          "tree_total_nodes": 19,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 28.173
+        },
+        "256": {
+          "sims": 256,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 256,
+          "tree_total_nodes": 21,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 99.218
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 1024,
+          "tree_total_nodes": 29,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 405.555
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 4096,
+          "tree_total_nodes": 31,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 1887.793
+        }
+      }
+    },
+    {
+      "instance": "nl-2-1",
+      "oracle_actions": 4,
+      "n_action_candidates": 6,
+      "greedy_plan_len": 6,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 4,
+          "root_children": 6,
+          "root_visits": 64,
+          "tree_total_nodes": 75,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 99.61
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 5,
+          "root_children": 6,
+          "root_visits": 256,
+          "tree_total_nodes": 298,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 460.745
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": false,
+          "plan_len": 5,
+          "root_children": 6,
+          "root_visits": 1024,
+          "tree_total_nodes": 1109,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 2122.013
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 4096,
+          "tree_total_nodes": 5307,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 13725.439
+        }
+      }
+    },
+    {
+      "instance": "nl-2-2",
+      "oracle_actions": 7,
+      "n_action_candidates": 9,
+      "greedy_plan_len": 9,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 4,
+          "root_children": 6,
+          "root_visits": 64,
+          "tree_total_nodes": 75,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 126.493
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 256,
+          "tree_total_nodes": 296,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 566.305
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": false,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 1024,
+          "tree_total_nodes": 1305,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 2828.416
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": false,
+          "plan_len": 7,
+          "root_children": 6,
+          "root_visits": 4096,
+          "tree_total_nodes": 4795,
+          "tree_max_depth_reached": 7,
+          "elapsed_ms": 19014.491
+        }
+      }
+    },
+    {
+      "instance": "nl-2-3",
+      "oracle_actions": 5,
+      "n_action_candidates": 7,
+      "greedy_plan_len": 7,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 3,
+          "root_children": 6,
+          "root_visits": 64,
+          "tree_total_nodes": 67,
+          "tree_max_depth_reached": 3,
+          "elapsed_ms": 111.696
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 5,
+          "root_children": 6,
+          "root_visits": 256,
+          "tree_total_nodes": 289,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 590.056
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": false,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 1024,
+          "tree_total_nodes": 1151,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 2417.145
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": false,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 4096,
+          "tree_total_nodes": 4504,
+          "tree_max_depth_reached": 7,
+          "elapsed_ms": 13278.712
+        }
+      }
+    },
+    {
+      "instance": "nl-2-4",
+      "oracle_actions": 2,
+      "n_action_candidates": 3,
+      "greedy_plan_len": 3,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": true,
+          "plan_len": 3,
+          "root_children": 3,
+          "root_visits": 64,
+          "tree_total_nodes": 72,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 56.863
+        },
+        "256": {
+          "sims": 256,
+          "solved": true,
+          "plan_len": 3,
+          "root_children": 3,
+          "root_visits": 256,
+          "tree_total_nodes": 99,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 174.972
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 3,
+          "root_children": 3,
+          "root_visits": 1024,
+          "tree_total_nodes": 191,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 671.989
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 3,
+          "root_children": 3,
+          "root_visits": 4096,
+          "tree_total_nodes": 236,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 3125.176
+        }
+      }
+    },
+    {
+      "instance": "nl-2-5",
+      "oracle_actions": 5,
+      "n_action_candidates": 7,
+      "greedy_plan_len": 7,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 4,
+          "root_children": 6,
+          "root_visits": 64,
+          "tree_total_nodes": 75,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 111.662
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 5,
+          "root_children": 6,
+          "root_visits": 256,
+          "tree_total_nodes": 325,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 531.518
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": false,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 1024,
+          "tree_total_nodes": 1210,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 2295.793
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": false,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 4096,
+          "tree_total_nodes": 4531,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 13209.115
+        }
+      }
+    },
+    {
+      "instance": "nl-3-0",
+      "oracle_actions": 2,
+      "n_action_candidates": 3,
+      "greedy_plan_len": 3,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": true,
+          "plan_len": 3,
+          "root_children": 3,
+          "root_visits": 64,
+          "tree_total_nodes": 72,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 56.978
+        },
+        "256": {
+          "sims": 256,
+          "solved": true,
+          "plan_len": 3,
+          "root_children": 3,
+          "root_visits": 256,
+          "tree_total_nodes": 99,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 175.654
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 3,
+          "root_children": 3,
+          "root_visits": 1024,
+          "tree_total_nodes": 191,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 671.481
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 3,
+          "root_children": 3,
+          "root_visits": 4096,
+          "tree_total_nodes": 236,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 3037.266
+        }
+      }
+    },
+    {
+      "instance": "nl-3-1",
+      "oracle_actions": 1,
+      "n_action_candidates": 2,
+      "greedy_plan_len": 2,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 64,
+          "tree_total_nodes": 19,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 29.227
+        },
+        "256": {
+          "sims": 256,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 256,
+          "tree_total_nodes": 21,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 99.927
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 1024,
+          "tree_total_nodes": 29,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 414.54
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 2,
+          "root_children": 2,
+          "root_visits": 4096,
+          "tree_total_nodes": 31,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 1919.992
+        }
+      }
+    },
+    {
+      "instance": "nl-3-2",
+      "oracle_actions": 6,
+      "n_action_candidates": 8,
+      "greedy_plan_len": 8,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 4,
+          "root_children": 6,
+          "root_visits": 64,
+          "tree_total_nodes": 77,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 124.445
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 5,
+          "root_children": 6,
+          "root_visits": 256,
+          "tree_total_nodes": 345,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 617.801
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": false,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 1024,
+          "tree_total_nodes": 1235,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 2522.278
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": false,
+          "plan_len": 7,
+          "root_children": 6,
+          "root_visits": 4096,
+          "tree_total_nodes": 4302,
+          "tree_max_depth_reached": 7,
+          "elapsed_ms": 14482.678
+        }
+      }
+    },
+    {
+      "instance": "nl-3-3",
+      "oracle_actions": 3,
+      "n_action_candidates": 5,
+      "greedy_plan_len": 5,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 3,
+          "root_children": 5,
+          "root_visits": 64,
+          "tree_total_nodes": 66,
+          "tree_max_depth_reached": 3,
+          "elapsed_ms": 94.162
+        },
+        "256": {
+          "sims": 256,
+          "solved": true,
+          "plan_len": 5,
+          "root_children": 5,
+          "root_visits": 256,
+          "tree_total_nodes": 282,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 425.091
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 5,
+          "root_children": 5,
+          "root_visits": 1024,
+          "tree_total_nodes": 1119,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 1965.366
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 5,
+          "root_children": 5,
+          "root_visits": 4096,
+          "tree_total_nodes": 4283,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 9655.175
+        }
+      }
+    },
+    {
+      "instance": "nl-3-4",
+      "oracle_actions": 3,
+      "n_action_candidates": 4,
+      "greedy_plan_len": 4,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": true,
+          "plan_len": 4,
+          "root_children": 4,
+          "root_visits": 64,
+          "tree_total_nodes": 77,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 67.456
+        },
+        "256": {
+          "sims": 256,
+          "solved": true,
+          "plan_len": 4,
+          "root_children": 4,
+          "root_visits": 256,
+          "tree_total_nodes": 280,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 298.888
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": true,
+          "plan_len": 4,
+          "root_children": 4,
+          "root_visits": 1024,
+          "tree_total_nodes": 655,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 1187.312
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": true,
+          "plan_len": 4,
+          "root_children": 4,
+          "root_visits": 4096,
+          "tree_total_nodes": 1298,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 4628.794
+        }
+      }
+    },
+    {
+      "instance": "nl-3-5",
+      "oracle_actions": 6,
+      "n_action_candidates": 8,
+      "greedy_plan_len": 8,
+      "greedy_solved": true,
+      "mcts_by_budget": {
+        "64": {
+          "sims": 64,
+          "solved": false,
+          "plan_len": 4,
+          "root_children": 6,
+          "root_visits": 64,
+          "tree_total_nodes": 79,
+          "tree_max_depth_reached": 4,
+          "elapsed_ms": 123.72
+        },
+        "256": {
+          "sims": 256,
+          "solved": false,
+          "plan_len": 5,
+          "root_children": 6,
+          "root_visits": 256,
+          "tree_total_nodes": 307,
+          "tree_max_depth_reached": 5,
+          "elapsed_ms": 608.37
+        },
+        "1024": {
+          "sims": 1024,
+          "solved": false,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 1024,
+          "tree_total_nodes": 1194,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 2778.765
+        },
+        "4096": {
+          "sims": 4096,
+          "solved": false,
+          "plan_len": 6,
+          "root_children": 6,
+          "root_visits": 4096,
+          "tree_total_nodes": 4839,
+          "tree_max_depth_reached": 6,
+          "elapsed_ms": 17125.834
+        }
+      }
+    }
+  ],
+  "summary": {
+    "solve_rate_by_sim_budget": {
+      "64": 0.389,
+      "256": 0.444,
+      "1024": 0.611,
+      "4096": 0.722
+    },
+    "solve_rate_by_oracle_actions_at_1024_sims": {
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0,
+      "4": 0.6,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0
+    },
+    "greedy_solve_rate": 1.0
+  }
+}
