@@ -65,6 +65,35 @@ Continuum (package name `cherry_ttt`) extends reasoning at inference time by sea
 
 ---
 
+
+## What Continuum is actually testing
+
+Continuum is not a model wrapper and it does not depend on a trained value model to function. The repository is an inference-time control and search substrate: candidate actions are proposed against a typed contract, filtered before search, executed against reversible state, and judged from observed substrate state rather than model self-report.
+
+The current runtime surface is deliberately split into a few hard responsibilities:
+
+- **Contract before search.** `ContractMDP` schema-conforms candidates and applies the effect gate before MCTS, A*, Best-of-N, or speculative execution can act on them.
+- **Real reversible substrates.** `MemoryKV`, SQLite, and filesystem adapters implement snapshot and restore so search can branch against state instead of pretending a token trace is the environment.
+- **Verifier isolation.** `PredicateRegistry` reads through `ReadOnlyView`. Reward is computed from world state while the verifier is denied the ability to mutate that state.
+- **Strategy independence.** `EnvMCTS`, `EnvAStar`, and `BestOfNActionSampler` share the same action and verification contract. Changing the search strategy does not redefine correctness.
+- **Speculative execution as a first-class path.** `Drafter`, `SpeculativeExecutor`, and `AdaptiveGammaController` explore draft-and-overlap execution instead of forcing every candidate through a purely serial commit path.
+- **No model required.** A model can be placed behind the proposal surface later, but the contract, substrate, verification, search, and speculation machinery are independently executable now.
+
+### Current experimental surface
+
+| Surface | Current implementation |
+|---|---|
+| Search | `EnvMCTS` with PUCT and progressive widening, `EnvAStar`, `BestOfNActionSampler` |
+| Substrate | Memory KV, SQLite, filesystem |
+| Verification | `PredicateRegistry` over `ReadOnlyView` |
+| Speculation | `Drafter`, `TemplateDrafter`, `SpeculativeExecutor`, `AdaptiveGammaController` |
+| Experiment harness | Four-arm runner plus real filesystem task binding |
+| Resident attention | Project-A119 fabric, 8 attention kernels declared, 1 exercised so far |
+| Equalizer bridge | `FabricCommitSink` carries equalized transitions into the resident fabric |
+| Continuum to Fabric integration | Not started yet |
+
+The repository is therefore testing a narrower and more falsifiable question than "does more inference compute help?": **when an inference-time system is forced to act through a typed, reversible, externally verified environment, which search and speculative strategies actually improve outcomes enough to justify their own cost?**
+
 ## Architecture
 
 <div class="t">
@@ -168,6 +197,15 @@ Real measurements against this codebase. Full raw data in `test-runs/` after run
 > MCTS reached 100% solve rate at 512 simulations. Real committed-plan wall clock was nearly identical to greedy's (about 1ms either way). MCTS's own tree-search overhead averaged about 1.5 seconds per instance. For a cheap, fast real tool, that overhead is the actual cost, not the plan it produces. See `tests/file_lab_probe.py`.
 
 ---
+
+
+## What the measurements already say
+
+The current evidence is intentionally not flattering to every search strategy. That is useful. On the synthetic SQLite benchmark, greedy solved every instance while the fixed-window MCTS configuration solved 35.2% overall. Increasing the simulation budget improved MCTS monotonically, which points at budget and candidate-visibility constraints rather than a broken port.
+
+The filesystem probe exposes a different failure mode: MCTS can reach the same solved outcome while spending orders of magnitude more time deciding what to do than the committed tool plan itself takes to execute. In the measured probe, committed-plan wall time stayed around the millisecond scale while MCTS tree-search overhead averaged around 1.5 seconds per instance.
+
+Those two results define the practical research pressure on Continuum: search quality, candidate visibility, verifier quality, and search overhead have to be measured together. A search algorithm winning in abstract tree quality is not enough if its own inference-time control cost overwhelms the tool call it is trying to improve.
 
 ## Fabric (Project-A119)
 
