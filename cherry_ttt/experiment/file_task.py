@@ -70,6 +70,15 @@ class FileProposer:
             self.actions.append(ActionCandidate("fs.write", {"path": path, "content": content}))
 
     def propose(self, s: State, n: int) -> list[tuple[ActionCandidate, float]]:
+        """Return up to n candidates, least-attempted action first.
+
+        Args:
+            s: Current MDP state; s.ctx encodes prior action labels.
+            n: Maximum candidates to return.
+
+        Returns:
+            (action, uniform_prior) pairs, novelty-ordered.
+        """
         prior = 1.0 / max(1, len(self.actions))
         ordered = sorted(
             enumerate(self.actions),
@@ -80,6 +89,15 @@ class FileProposer:
 
 
 def file_goal(instance: FileTaskInstance) -> GoalSpec:
+    """Build one file_predicate per target file, each requiring exists+contains.
+
+    Args:
+        instance: The seeded file-task instance whose files must all be written.
+
+    Returns:
+        A GoalSpec whose predicates are satisfied only when every target
+        file exists with its required content.
+    """
     predicates = tuple(
         PredicateRef("file_predicate", {"path": path, "exists": True, "contains": content})
         for path, content in sorted(instance.files.items())
@@ -88,6 +106,15 @@ def file_goal(instance: FileTaskInstance) -> GoalSpec:
 
 
 def file_mdp(instance: FileTaskInstance, root: str | Path) -> ContractMDP:
+    """Bind a real FileSystemSubstrate at root to this instance's proposer/schema.
+
+    Args:
+        instance: The seeded file-task instance.
+        root: Real directory the substrate operates on; created if missing.
+
+    Returns:
+        A ContractMDP ready for initial_state()/legal_actions()/transition().
+    """
     schema = default_registry()
     substrate = FileSystemSubstrate(root, substrate_id=f"fs-{instance.name}")
     return ContractMDP(
