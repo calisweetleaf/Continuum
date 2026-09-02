@@ -23,9 +23,9 @@
 
 </div>
 
-<p align="center">
-  <img src="assets/cherry.png" alt="Continuum project mark, a stylized cherry" width="140">
-</p>
+<div align="center">
+  <img src="assets/cherry.png" alt="Continuum project mark, a stylized cherry" width="96" height="96" style="border-radius:50%;object-fit:cover;">
+</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Experimental-febc2e?style=flat-square" alt="Status: Experimental"/>
